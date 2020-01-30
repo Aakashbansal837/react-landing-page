@@ -1,0 +1,91 @@
+@import '../../../constants/variables.scss';
+@import '../../../App.scss';
+
+.nav {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    flex: 1;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-logo {
+    font-family: inherit;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+  }
+
+  &-menu {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-basis: auto;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  &-link {
+    font-weight: $weight-mid;
+    opacity: $opacity-heavy;
+    font-size: 1.1rem;
+    padding: 1.5rem 2rem;
+    color: $color-dark;
+    transition: all 0.3s ease-out;
+
+    // &:hover {
+    //   background-color: darken($color-blue, 5%);
+    //   color: $color-white;
+    //   border-radius: 2px;
+    // }
+  }
+}
+
+
+// login button styling
+
+@mixin link-style($color) {
+	text-decoration: none;
+	font-family: $primary-font;
+	color: $color;
+	text-align: center;
+}
+
+	
+.btn-main {
+    color : white;
+	&:link {
+        display: inline-block;
+        padding: 0.4rem 1rem;
+        margin-left: 0.5rem;
+	    border-radius: 0.3rem;
+	    width: $button-width;
+	@include link-style($color-white);
+		background-color: $color-box-1;
+		transition: .3s;
+	}
+	
+	&:hover {
+		background-color: darken($color-box-1, 7%);
+		color: darken($color-text-light, 9%);
+		box-shadow: 0 2px 6px 0 rgba(33, 42, 57, 0.25);
+	}
+}
+
+
+@media only screen and(max-width: 700px) {
+  .nav {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    &-menu {
+      margin-top: 2rem;
+    }
+  }
+}

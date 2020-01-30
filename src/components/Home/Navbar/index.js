@@ -1,12 +1,22 @@
 import React from "react";
-import './navbar.css';
+import './navbar.scss';
+import { ReactComponent as Logo } from '../../../images/logo.svg';
 
 
 const Navbar = () => {
     return (
-        <div>
-            <h1>This is navbar </h1>
-        </div>
+        <nav class="nav">
+    <div class="container">
+      <Logo />
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">About Us</a></li>
+        <li><a href="#" class="nav-link">Blogs</a></li>
+        <li><a href="#" class="btn-main">Log In</a></li>
+      </ul>
+    </div>
+  </nav>
+        
     );
 
 };
