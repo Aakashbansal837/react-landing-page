@@ -1,8 +1,10 @@
 import React from 'react';
 
 
-export default Gallery = () => {
+const Gallery = () => {
     return (<div>
 
     </div>);
 }
+
+export default Gallery;

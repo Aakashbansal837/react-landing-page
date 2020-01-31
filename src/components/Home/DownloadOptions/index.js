@@ -1,8 +1,10 @@
 import React from 'react';
 
 
-export default DownloadOptions = () => {
+const DownloadOptions = () => {
     return (<div>
 
     </div>);
 }
+
+export default DownloadOptions

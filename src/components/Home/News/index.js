@@ -1,8 +1,10 @@
 import React from 'react';
 
 
-export default News = () => {
+const News = () => {
     return (<div>
 
     </div>);
 }
+
+export default News;

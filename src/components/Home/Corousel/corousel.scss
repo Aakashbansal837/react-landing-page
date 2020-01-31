@@ -1,10 +1,5 @@
 @import '../../../constants/variables.scss';
 
-.carousel {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 ul.slides {
     display: block;
     position: relative;
@@ -102,6 +97,7 @@ ul.slides input {
     display: inline-block;
     width: 40px;
     height: 4px;
+    opacity: $opacity-mid;
     border-radius: 4px;
     background-color: #fff;
     opacity: $opacity-mid;

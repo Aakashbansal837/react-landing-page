@@ -1,0 +1,8 @@
+@import '../../../App.scss';
+
+.htmp {
+    margin-top: 200px;
+    &-header {
+        @include header-main();
+    }
+}

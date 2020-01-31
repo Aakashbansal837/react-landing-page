@@ -2,13 +2,21 @@
 // fonts family
 $primary-font : "Open Sans";
 
+$primary-text-color : #212A39;
+
+// head text
+$head-text : 38px;
+$head-line-height : 46px;
+$head-margin-top : 90px;
+
 //font colors
 $color-white: #ffffff;
 $color-black: #212121;
 $color-dark: #353535;
 $color-light: #f4f4f4;
 $color-blue : #15AAC5;
-
+$color-text-head : #15AAC5;
+$color-text-dis : #212A39;
 
 
 $button-width: 112px;
@@ -30,5 +38,14 @@ $opacity-full : 1;
 
 
 // z-index
-
 $z-index-top : 100;
+
+
+// partner card
+$partner-card-height : 230px;
+$partner-card-width : 230px;
+
+
+//font-size
+$size-dis-txt : 16px;
+$size-dis-head : 24px;

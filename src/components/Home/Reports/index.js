@@ -1,8 +1,10 @@
 import React from 'react';
 
 
-export default Reports = () => {
+const Reports = () => {
     return (<div>
 
     </div>);
 }
+
+export default Reports;

@@ -1,8 +1,10 @@
 import React from 'react';
 
 
-export default Reflections = () => {
+const Reflections = () => {
     return (<div>
 
     </div>);
 }
+
+export default Reflections;

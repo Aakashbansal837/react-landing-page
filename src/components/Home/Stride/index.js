@@ -1,8 +1,9 @@
 import React from 'react';
 
 
-export default Stride = () => {
+const Stride = () => {
     return (<div>
 
     </div>);
 }
+export default Stride;

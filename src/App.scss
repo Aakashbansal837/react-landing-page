@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  color: $primary-text-color;
 }
 
 body {
@@ -16,11 +17,10 @@ body {
 }
 
 
-
-// Main Styles
-.container {
-  max-width: 75rem;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
+@mixin header-main() {
+  font-size: $head-text;
+    font-family: $primary-font;
+    font-weight: $weight-mid;
+    line-height: $head-line-height;
+    margin-top: $head-margin-top;
 }
