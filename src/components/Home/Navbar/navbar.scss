@@ -1,8 +1,12 @@
 @import '../../../constants/variables.scss';
 @import '../../../App.scss';
 
-.nav {
-  .container {
+.nvbr {
+  position: fixed !important;
+  width: 100%;
+  z-index: 980;
+  background-color: $color-white;
+  &-container {
     display: flex;
     flex-direction: row;
     height: 80px;
@@ -14,9 +18,7 @@
 
   &-logo {
     font-family: inherit;
-    font-size: 2rem;
-    text-transform: uppercase;
-
+    @include max-ht-wd($ht : 47.24px , $wd : 162px);
   }
 
   &-menu {
@@ -26,22 +28,22 @@
     flex-basis: auto;
     justify-content: flex-end;
     align-items: center;
-    margin: 2rem 0;
+    // margin: 2rem 0;
   }
 
   &-link {
     font-weight: $weight-mid;
     opacity: $opacity-heavy;
     font-size: 1.1rem;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1.5rem;
     color: $color-dark;
+    margin-right: 1rem;
     transition: all 0.3s ease-out;
+    text-decoration: none;
 
-    // &:hover {
-    //   background-color: darken($color-blue, 5%);
-    //   color: $color-white;
-    //   border-radius: 2px;
-    // }
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -60,8 +62,8 @@
     color : white;
 	&:link {
         display: inline-block;
-        padding: 0.4rem 1rem;
-        margin-left: 0.5rem;
+        padding: 0.7rem 1rem;
+        margin : 0.4rem 1rem 0rem 1rem;
 	    border-radius: 0.3rem;
 	    width: $button-width;
 	@include link-style($color-white);

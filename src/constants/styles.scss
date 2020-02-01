@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+
+@mixin header-main() {
+    font-size: $head-text;
+      font-family: $primary-font;
+      font-weight: $weight-mid;
+      line-height: $head-line-height;
+      margin-top: $head-margin-top;
+  }
+  
+  @mixin  max-ht-wd ( $ht , $wd) {
+    max-width: $wd;
+    max-height: $ht;
+    height: 100%;
+    width: 100%;
+  }
+  

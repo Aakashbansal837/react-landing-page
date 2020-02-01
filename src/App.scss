@@ -1,4 +1,6 @@
 @import './constants/variables.scss';
+@import "../node_modules/bootstrap-scss/bootstrap.scss";
+@import './constants/styles.scss';
 
 * {
   padding: 0;
@@ -17,10 +19,10 @@ body {
 }
 
 
-@mixin header-main() {
-  font-size: $head-text;
-    font-family: $primary-font;
-    font-weight: $weight-mid;
-    line-height: $head-line-height;
-    margin-top: $head-margin-top;
-}
+
+// Main Styles
+.container {
+  max-width: 78rem;
+  width: 100%;
+  margin: 0 auto;
+} 

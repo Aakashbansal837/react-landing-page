@@ -10,8 +10,9 @@ const About = () => {
             <center className="abt-header">
                  About Gyanodaya
             </center>
-            <div className='abt-dt'>
-                <div className='abt-dt-vdo'>
+            <div className='container'>
+            <div className='row abt-dt'>
+                <div className='abt-dt-vdo col-md-6 col-lg-6 col-sm-12 col-xs-12'>
                     <div className='abt-dt-vdo-vd'>
                         <iframe  src="https://www.youtube.com/embed/w2Ov5jzm3j8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -22,7 +23,8 @@ const About = () => {
                         <img src={BgBall} />
                     </div>
                 </div>
-                <div className='abt-dt-txt'>
+                <div className='abt-dt-txt col-md-6 col-lg-6 col-sm-12 col-xs-12'>
+                    <div>
                     <span className='abt-dt-txt-head'>
                         {aboutDivTexthead}
                     </span>
@@ -31,9 +33,18 @@ const About = () => {
                     <span className='abt-dt-txt-dis'>
                         {aboutDivTextDis}
                     </span>
+                    </div>
+                    <div className="read-more">
+                    <a href="#" className="read-more-btn">
+                        Read more
+                    <div className="transition"></div>
+                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        
+            </div>
+            </div>
     );
 }
 

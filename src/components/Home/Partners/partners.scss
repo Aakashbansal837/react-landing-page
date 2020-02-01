@@ -10,7 +10,6 @@
     }
 
     &-stack {
-        margin-left: 12%;
         margin-top: 2rem;
         &-card  { 
             box-shadow: 0 4px 8px 0 rgba(33, 42, 57, 0.15);
@@ -18,9 +17,6 @@
             transition: 0.3s;
             width: $partner-card-width;
             height : $partner-card-height;
-            display: inline-block;
-            margin: 0.85rem;
-    
             &:hover {
                 box-shadow: 0 4px 16px 0 rgba(33, 42, 57, 0.15);
               }
@@ -40,13 +36,13 @@
             &-3 {
                 height: 111.93px;
                 width: 167.71px;
-                margin : 58px 0px 61px 32px;
+                margin : 57px 14px 61px 14px;
             }
 
             &-4 {
                 height: 170px;
                 width : 140px;
-                margin : 33px 0px 27px 45px;
+                margin : 33px 39px 27px 40px;
             }
         }
     }

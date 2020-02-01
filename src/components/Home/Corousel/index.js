@@ -7,13 +7,12 @@ import crsl4 from '../../../images/crsl4.png';
 
 const Corousel = () => {
     return (
-            <div>
                 <div className="carousel">
                     <ul className="slides">
                         <input type="radio" name="radio-buttons" id="img-1"  />
                         <li className="slide-container">
                             <div className="slide-image">
-                                <img src={crsl1} />
+                                <img className="carousel-img" src={crsl1} />
                             </div>
                             <div className="carousel-controls">
                                 <label for="img-4" className="prev-slide">
@@ -27,7 +26,7 @@ const Corousel = () => {
                         <input type="radio" name="radio-buttons" id="img-2" checked />
                         <li className="slide-container">
                             <div className="slide-image">
-                                <img src={crsl2} />
+                                <img className="carousel-img" src={crsl2} />
                             </div>
                             <div className="carousel-controls">
                                 <label for="img-1" className="prev-slide">
@@ -41,7 +40,7 @@ const Corousel = () => {
                         <input type="radio" name="radio-buttons" id="img-3" checked />
                         <li className="slide-container">
                             <div className="slide-image">
-                                <img src={crsl3} />
+                                <img className="carousel-img" src={crsl3} />
                             </div>
                             <div className="carousel-controls">
                                 <label for="img-2" className="prev-slide">
@@ -55,7 +54,7 @@ const Corousel = () => {
                         <input type="radio" name="radio-buttons" id="img-4" checked />
                         <li className="slide-container">
                             <div className="slide-image">
-                                <img src={crsl4} />
+                                <img className="carousel-img" src={crsl4} />
                             </div>
                             <div className="carousel-controls">
                                 <label for="img-3" className="prev-slide">
@@ -74,7 +73,6 @@ const Corousel = () => {
                         </div>
                     </ul>
                 </div>
-            </div>
     );
 
 };
