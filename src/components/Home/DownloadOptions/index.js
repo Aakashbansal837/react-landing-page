@@ -1,10 +1,8 @@
-import React from 'react';
-
+import React from "react";
+import "../../../styles/index.scss";
 
 const DownloadOptions = () => {
-    return (<div>
+  return <div></div>;
+};
 
-    </div>);
-}
-
-export default DownloadOptions
+export default DownloadOptions;
