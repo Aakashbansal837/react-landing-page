@@ -4,7 +4,7 @@
 @mixin div-box() {
   display: inline-block;
   width: 48%;
-  min-height: 250px;
+  min-height: 16rem;
   height: max-content;
 }
 
@@ -17,15 +17,15 @@
   }
 
   &-dt {
-    margin-top: 50px;
+    margin-top: 3rem;
     &-vdo {
       @include div-box();
       &-vd {
-        @include max-ht-wd($ht: 361.57px, $wd: 540.76px);
+        @include max-ht-wd($ht: 22.598125rem, $wd: 33.7975rem);
         z-index: 2;
         left: 2rem;
         position: absolute;
-        min-height: 300px;
+        min-height: 18.75rem;
       }
       &-vd iframe {
         width: 100%;
@@ -34,12 +34,12 @@
       }
       &-bg {
         &-wall {
-          @include max-ht-wd($ht: 253.72px, $wd: 297.11px);
+          @include max-ht-wd($ht: 15.8575rem, $wd: 18.569375rem);
           position: absolute;
           animation: vdBgAnimation 4.5s infinite;
         }
         &-ball {
-          @include max-ht-wd($ht: 143.72px, $wd: 143.71px);
+          @include max-ht-wd($ht: 9rem, $wd: 9rem);
           position: absolute;
           z-index: 1;
           left: 15rem;
@@ -64,39 +64,39 @@
 
 @keyframes vdBgAnimation {
   0% {
-    margin-top: 50px;
+    margin-top: 3rem;
   }
   50% {
-    margin-top: 100px;
+    margin-top: 6rem;
   }
   100% {
-    margin-top: 50px;
+    margin-top: 3rem;
   }
 }
 
 @keyframes vdBgBallAnimation {
   0% {
-    margin-top: 200px;
+    margin-top: 12rem;
   }
   50% {
-    margin-top: 260px;
+    margin-top: 16.25rem;
   }
   100% {
-    margin-top: 200px;
+    margin-top: 12rem;
   }
 }
 
 .read-more-btn {
-  padding: 12px 80px;
-  margin: 10px 4px;
+  padding: 0.75rem 5rem;
+  margin: 0.625rem 0.25rem;
   color: $color-button-read-more;
   text-decoration: none;
   display: inline-block;
 
-  top: 40px;
+  top: 2.5rem;
   font-family: $primary-font;
   font-weight: $weight-mid;
-  font-size: 18px;
+  font-size: 1.125rem;
   cursor: hand;
   text-align: center;
   border: 1px solid $color-button-read-more;
