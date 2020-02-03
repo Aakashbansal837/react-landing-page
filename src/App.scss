@@ -1,6 +1,4 @@
-@import './constants/variables.scss';
-@import "../node_modules/bootstrap-scss/bootstrap.scss";
-@import './constants/styles.scss';
+@import "./styles/variables.scss";
 
 * {
   padding: 0;
@@ -18,11 +16,9 @@ body {
   line-height: 1.4;
 }
 
-
-
 // Main Styles
 .container {
   max-width: 78rem;
   width: 100%;
   margin: 0 auto;
-} 
+}
