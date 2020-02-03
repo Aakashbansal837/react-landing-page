@@ -1,0 +1,45 @@
+@import "./variables.scss";
+
+.partner-div {
+  &-header {
+    @include header-main();
+  }
+
+  &-stack {
+    margin-top: 2rem;
+    &-card {
+      box-shadow: 0 4px 8px 0 rgba(33, 42, 57, 0.15);
+      border-radius: 8px;
+      transition: 0.3s;
+      width: $partner-card-width;
+      height: $partner-card-height;
+      &:hover {
+        box-shadow: 0 4px 16px 0 rgba(33, 42, 57, 0.15);
+      }
+
+      &-1 {
+        width: 160px;
+        height: 154px;
+        margin: 38px;
+      }
+
+      &-2 {
+        width: 170px;
+        height: 170px;
+        margin: 30px;
+      }
+
+      &-3 {
+        height: 111.93px;
+        width: 167.71px;
+        margin: 57px 14px 61px 14px;
+      }
+
+      &-4 {
+        height: 170px;
+        width: 140px;
+        margin: 33px 39px 27px 40px;
+      }
+    }
+  }
+}

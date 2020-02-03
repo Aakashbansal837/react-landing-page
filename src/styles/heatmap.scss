@@ -1,0 +1,54 @@
+@import "./variables.scss";
+@import "./styles.scss";
+
+.htmp {
+  margin-top: 200px;
+  &-header {
+    @include header-main();
+  }
+
+  &-txt {
+    margin-top: 40px;
+  }
+
+  &-mp {
+    margin-top: 60px;
+  }
+
+  &-disc {
+    @include disc-text();
+  }
+
+  &-map {
+    @include max-ht-wd($ht: 551.53px, $wd: 326.75);
+  }
+
+  &-data {
+    @include max-ht-wd($ht: 541px, $wd: 470px);
+
+    &-box {
+      box-shadow: 0 2px 4px 0 rgba(33, 42, 57, 0.15);
+      padding: 4rem 0px;
+    }
+    &-ht {
+      @include Header-text-2();
+      box-shadow: 0 2px 4px 0 rgba(33, 42, 57, 0.15);
+      padding: 1rem 0rem;
+
+      &-blue {
+        @include header-main();
+        color: $color-text-head;
+      }
+      &-black {
+        @include disc-text();
+        padding-top: 2rem;
+      }
+    }
+  }
+}
+
+.svg-htmp {
+  a:hover {
+    opacity: 0.6;
+  }
+}
