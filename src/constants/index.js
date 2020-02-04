@@ -3,6 +3,14 @@ export const aboutDivTextDis = `Gyanodaya Godda, an education initiative has bee
 
 export const heatmapDisc = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
 
+export const StrideInfo = `Check this space to learn about the impact Gyanodaya is making on the ground. It includes experiences, success stories, and highlights of the program in the words of our teachers, students, and parents.`;
+export const StrideCard1head = `Ravindra Nath, Principal`;
+export const StrideCard1txt = `Schools were short  of teachers and students were dependent on tuition teachers before Gyanodaya was introduced in the schools of Godda district. 90% of the students in my school are under privileged and haven’t ever se…`;
+export const StrideCard2head = `Shreemant Rakshit, Student`;
+export const StrideCard2txt = `Shreemant Rakshit, a resident of Deodanr Village,  has been working in a cloth retail shop after his school hours since Class 6. However, this has not prevented Shreemant Rakshit from working hard in his academics over the years…`;
+export const StrideCard3head = `Kasturba Gandhi Balika Vidyalaya (KGBV), Sunderapa…`;
+export const StrideCard3txt = `KGBV Sunderpahari is situated in a Naxal-affected area of Godda and 80% of the girls belong to the disadvantaged groups. It was surprising and encouraging to see the excitement of these students…`;
+export const StrideReadMore = "Read full story";
 export const SvgNames = {
   ar1: {
     name: "area 1",

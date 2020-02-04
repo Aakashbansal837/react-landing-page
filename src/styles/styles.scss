@@ -29,6 +29,13 @@
   font-weight: $weight-mid;
 }
 
+@mixin Header-text-3() {
+  font-family: $primary-font;
+  color: $color-black;
+  font-size: $size-dis-head-2;
+  font-weight: $weight-mid;
+}
+
 @mixin disc-text() {
   font-family: $primary-font;
   color: $color-text-dis;
