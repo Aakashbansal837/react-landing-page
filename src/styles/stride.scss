@@ -2,8 +2,13 @@
 @import "./styles.scss";
 
 .stride {
+  min-height: 38rem;
   &-header {
     @include header-main();
+  }
+
+  &-main {
+    min-height: 30rem;
   }
 
   &-txt {
@@ -20,6 +25,9 @@
     box-shadow: 0 2px 10px 0 rgba(33, 42, 57, 0.15);
     border-radius: 8px;
     margin-top: 1rem;
+    position: absolute;
+    background-color: $color-white;
+    z-index: 1;
 
     &:hover {
       box-shadow: 0 2px 16px 0 rgba(33, 42, 57, 0.15);
@@ -32,25 +40,53 @@
     }
     &-dt {
       padding: 1rem;
+      z-index: 2;
       &-head {
         @include Header-text-3();
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
       }
       &-txt {
         @include disc-text();
-        // text-align: justify;
         overflow: hidden;
         text-overflow: ellipsis;
+        max-height: 6.85rem;
       }
 
       &-rm {
         color: $color-blue !important;
         font-weight: $weight-mid;
         font-size: 1.125rem;
+        margin-top: 1.5rem;
         cursor: pointer;
         float: right;
       }
     }
+
+    &-bg {
+      @include max-ht-wd($ht: 27.5625rem, $wd: 23.125rem);
+      position: absolute;
+      z-index: -1;
+      margin-left: -2rem;
+      // margin-top: -16rem;
+      animation: StrideBackground 4s infinite;
+    }
+  }
+
+  &-rm-btn {
+    margin-top: 1rem;
+  }
+}
+
+@keyframes StrideBackground {
+  0% {
+    margin-top: 10rem;
+  }
+  50% {
+    margin-top: 14rem;
+  }
+  100% {
+    margin-top: 10rem;
   }
 }

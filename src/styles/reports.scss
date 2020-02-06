@@ -1,1 +1,70 @@
 @import "./variables.scss";
+@import "./styles.scss";
+
+.report {
+  min-height: 35rem;
+  &-header {
+    @include header-main();
+  }
+  &-main {
+    margin-top: 4rem;
+    min-height: 30rem;
+    margin-left: 15%;
+
+    &-dt {
+      margin: 2.5rem 0rem 0rem 2.5rem;
+      min-height: 22.125rem;
+      @include max-ht-wd($ht: 22.125rem, $wd: 50rem);
+      background-color: $color-white;
+      padding: 2rem 0rem 0rem 1rem;
+      position: absolute;
+      box-shadow: 0 0 10px 0 rgba(33, 42, 57, 0.15);
+      z-index: 1;
+      border-radius: 0.5rem;
+
+      &-img {
+        @include max-ht-wd($ht: 18.0625rem, $wd: 19.8125rem);
+        &-dt {
+          height: 18rem;
+          width: 18rem;
+        }
+      }
+
+      &-data {
+        @include max-ht-wd($ht: 18.0625rem, $wd: 29.8125rem);
+
+        &-head {
+          @include Header-text-4();
+        }
+
+        &-txt {
+          @include disc-text();
+          text-align: left;
+          margin: 1.5rem 2rem 0rem 0rem;
+        }
+
+        &-dw {
+          font-weight: $weight-mid;
+          background-color: $color-white;
+          font-size: 1.125rem;
+          margin-top: 5.5rem;
+          bottom: 0rem;
+          cursor: pointer;
+          &-span {
+            color: $color-blue !important;
+            margin-left: 1rem;
+          }
+
+          & a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    &-bg {
+      @include max-ht-wd($ht: 27.0625rem, $wd: 20.875rem);
+      position: absolute;
+    }
+  }
+}

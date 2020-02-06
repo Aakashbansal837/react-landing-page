@@ -14,6 +14,12 @@
   height: 100%;
   width: 100%;
 }
+@mixin min-ht-max-wd($ht, $wd) {
+  max-width: $wd;
+  max-height: $ht;
+  height: 100%;
+  width: 100%;
+}
 
 @mixin Header-text() {
   font-family: $primary-font;
@@ -36,8 +42,16 @@
   font-weight: $weight-mid;
 }
 
+@mixin Header-text-4() {
+  font-family: $primary-font;
+  color: $color-black;
+  font-size: $size-dis-head-3;
+  font-weight: $weight-mid;
+}
+
 @mixin disc-text() {
   font-family: $primary-font;
+  background-color: $color-white;
   color: $color-text-dis;
   font-size: $size-dis-txt;
   font-weight: $weight-light;
