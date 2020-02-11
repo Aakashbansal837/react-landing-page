@@ -1,1 +1,36 @@
-@import "./variables.scss";
+.dwnld {
+  min-height: 15rem;
+  width: 100%;
+  background-image: url(../images/bg-wall-big.svg);
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  background-size: cover;
+
+  &-main {
+    padding-top: 2rem;
+
+    &-header {
+      @include Header-text-4();
+      padding-top: 2.5rem;
+    }
+
+    &-links {
+      cursor: pointer;
+    }
+
+    &-download {
+      margin-top: 1.5rem;
+      height: 2.6rem;
+      border-radius: 0.4rem;
+      box-shadow: 0 2px 6px 0 rgba(33, 42, 57, 0.25);
+      width: 9rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.vertical-divider {
+  height: 11rem;
+  border: 0.02rem solid $color-black;
+  opacity: 0.5;
+}

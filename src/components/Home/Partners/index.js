@@ -1,9 +1,7 @@
 import React from "react";
-import "../../../styles/index.scss";
 import { ReactComponent as Card1 } from "../../../images/card1.svg";
 import { ReactComponent as Card2 } from "../../../images/card2.svg";
 import Card3 from "../../../images/card3.svg";
-// import { ReactComponent as Card3 } from '../../../images/card3.svg';
 import { ReactComponent as Card4 } from "../../../images/card4.svg";
 
 const Partners = () => {

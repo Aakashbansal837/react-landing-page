@@ -1,1 +1,121 @@
-@import "./variables.scss";
+.ftr {
+  background-color: $color-footer-bg;
+  height: 32rem;
+  width: 100%;
+
+  &-main {
+    padding-top: 3rem;
+
+    &-logo {
+      font-family: $primary-font !important;
+      color: $color-white;
+      @include max-ht-wd($ht: 47.24px, $wd: 162px);
+    }
+
+    &-btn {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      flex-basis: auto;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+  &-content {
+    margin-top: 3rem;
+    &-head {
+      @include Header-text-3();
+      color: $color-white;
+    }
+
+    &-data {
+      @include disc-text();
+      color: $color-white;
+    }
+  }
+}
+
+.footer-button {
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  color: $color-white;
+  background-color: $color-white;
+  text-decoration: none;
+  display: inline-block;
+
+  font-family: $primary-font;
+  font-weight: $weight-light;
+  font-size: 1rem;
+  cursor: hand;
+  text-align: center;
+  border: 1px solid $color-white;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: transparent !important;
+  z-index: 10;
+}
+
+.footer-button:hover {
+  border: 1px solid $color-black;
+  color: $color-black !important;
+  font-weight: $weight-mid;
+  text-decoration: none;
+}
+.footer-button::before {
+  content: "";
+  text-decoration: none;
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: $color-white;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+
+.footer-button::after {
+  // content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  background: $color-white;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+.footer-button:hover::before {
+  opacity: 1;
+  width: 116%;
+}
+.footer-button:hover::after {
+  opacity: 1;
+  width: 120%;
+}

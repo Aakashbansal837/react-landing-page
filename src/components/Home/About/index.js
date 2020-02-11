@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../styles/index.scss";
 import { aboutDivTexthead, aboutDivTextDis } from "../../../constants";
 import BgWall from "../../../images/vdo-bg-wall.svg";
 import BgBall from "../../../images/vdo-bg-ball.svg";
@@ -25,10 +24,10 @@ const About = () => {
               ></iframe>
             </div>
             <div className="abt-dt-vdo-bg-wall">
-              <img src={BgWall} />
+              <img className="abt-dt-vdo-bg-wall-img" src={BgWall} />
             </div>
             <div className="abt-dt-vdo-bg-ball">
-              <img src={BgBall} />
+              <img className="abt-dt-vdo-bg-ball-img" src={BgBall} />
             </div>
           </div>
           <div
@@ -45,7 +44,6 @@ const About = () => {
             <div className="read-more">
               <a href="#" className="read-more-btn">
                 Read more
-                <div className="transition"></div>
               </a>
             </div>
           </div>

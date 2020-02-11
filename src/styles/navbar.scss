@@ -1,10 +1,10 @@
-@import "./variables.scss";
-
 .nvbr {
   position: fixed !important;
   width: 100%;
   z-index: 980;
   background-color: $color-white;
+  box-shadow: 0 4px 8px 0 rgba(33, 42, 57, 0.15);
+
   &-container {
     display: flex;
     flex-direction: row;

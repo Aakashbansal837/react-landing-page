@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../styles/index.scss";
 import BGWall from "../../../images/bg-wall-2.svg";
 import Report from "../../../images/report.png";
 import { ReportsText } from "../../../constants/index";

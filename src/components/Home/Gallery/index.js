@@ -1,8 +1,14 @@
 import React from "react";
-import "../../../styles/index.scss";
 
 const Gallery = () => {
-  return <div></div>;
+  return (
+    <div className="gallery">
+      <center className="gallery-header">Gallery</center>
+      <div className="container">
+        <div className="gallery-main"></div>
+      </div>
+    </div>
+  );
 };
 
 export default Gallery;

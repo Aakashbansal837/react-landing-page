@@ -14,6 +14,7 @@ export const StrideReadMore = "Read full story";
 
 export const ReportsText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
 
+export const ReflectionsText = `Listen to what our partners and several other dignitaries have got to say about Gyanodaya`;
 export const SvgNames = {
   ar1: {
     name: "area 1",

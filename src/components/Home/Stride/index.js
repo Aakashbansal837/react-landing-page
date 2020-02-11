@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../styles/index.scss";
 import {
   StrideInfo,
   StrideCard1head,
@@ -52,39 +51,72 @@ const Stride = () => {
 
       <div className="container stride-main">
         <div className="row">
-          {StrideCards.map((card, index) => {
-            return (
-              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div
-                  className="container"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                >
-                  <div className="stride-card">
-                    <img
-                      className="stride-card-img"
-                      src={card.card}
-                      alt="stride card 1"
-                    />
-                    <div className="stride-card-dt">
-                      <p className="stride-card-dt-head">{card.head}</p>
-                      <p className="stride-card-dt-txt">{card.txt}</p>
-                      <a className="stride-card-dt-rm">
-                        {card.rm} <img src={RightArrow} />
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    style={{ visibility: index == 0 ? "visible" : "hidden" }}
-                  >
-                    <div className="stride-card-bg">
-                      <img src={Wall} />
-                    </div>
-                  </div>
+          <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div
+              className="container"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            >
+              <div className="stride-card">
+                <img
+                  className="stride-card-img"
+                  src={Card1}
+                  alt="stride card 1"
+                />
+                <div className="stride-card-dt">
+                  <p className="stride-card-dt-head">{StrideCard1head}</p>
+                  <p className="stride-card-dt-txt">{StrideCard1txt}</p>
+                  <a className="stride-card-dt-rm">
+                    {StrideReadMore} <img src={RightArrow} />
+                  </a>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div
+              className="container"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div className="stride-card">
+                <img
+                  className="stride-card-img"
+                  src={Card2}
+                  alt="stride card 1"
+                />
+                <div className="stride-card-dt">
+                  <p className="stride-card-dt-head">{StrideCard2head}</p>
+                  <p className="stride-card-dt-txt">{StrideCard2txt}</p>
+                  <a className="stride-card-dt-rm">
+                    {StrideReadMore} <img src={RightArrow} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div
+              className="container"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+            >
+              <div className="stride-card">
+                <img
+                  className="stride-card-img"
+                  src={Card3}
+                  alt="stride card 1"
+                />
+                <div className="stride-card-dt">
+                  <p className="stride-card-dt-head">{StrideCard3head}</p>
+                  <p className="stride-card-dt-txt">{StrideCard3txt}</p>
+                  <a className="stride-card-dt-rm">
+                    {StrideReadMore} <img src={RightArrow} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

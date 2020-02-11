@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../styles/index.scss";
 import crsl1 from "../../../images/crsl1.png";
 import crsl2 from "../../../images/crsl2.jpg";
 import crsl3 from "../../../images/crsl3.jpg";

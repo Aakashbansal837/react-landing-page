@@ -1,8 +1,7 @@
-@import "./variables.scss";
-
 .partner-div {
   &-header {
     @include header-main();
+    margin-top: 9rem;
   }
 
   &-stack {

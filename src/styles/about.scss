@@ -1,11 +1,8 @@
-@import "./variables.scss";
-@import "./styles.scss";
-
 @mixin div-box() {
-  display: inline-block;
-  width: 48%;
   min-height: 16rem;
   height: max-content;
+  position: relative;
+  margin-top: 8rem;
 }
 
 .abt {
@@ -17,7 +14,6 @@
   }
 
   &-dt {
-    margin-top: 3rem;
     &-vdo {
       @include div-box();
       &-vd {
@@ -37,6 +33,10 @@
           @include max-ht-wd($ht: 15.8575rem, $wd: 18.569375rem);
           position: absolute;
           animation: vdBgAnimation 4.5s infinite;
+
+          &-img {
+            @include max-ht-wd($ht: 15.8575rem, $wd: 18.569375rem);
+          }
         }
         &-ball {
           @include max-ht-wd($ht: 9rem, $wd: 9rem);
@@ -44,6 +44,9 @@
           z-index: 1;
           left: 15rem;
           animation: vdBgBallAnimation 5s infinite;
+          &-img {
+            @include max-ht-wd($ht: 9rem, $wd: 9rem);
+          }
         }
       }
     }
@@ -76,13 +79,13 @@
 
 @keyframes vdBgBallAnimation {
   0% {
-    margin-top: 12rem;
+    margin-top: 10rem;
   }
   50% {
-    margin-top: 16.25rem;
+    margin-top: 14rem;
   }
   100% {
-    margin-top: 12rem;
+    margin-top: 10rem;
   }
 }
 
@@ -139,7 +142,8 @@
 }
 
 .read-more-btn::after {
-  content: "";
+  // uncomment below content to have 2 different effects
+  // content: "";
   width: 0%;
   height: 100%;
   display: block;
@@ -159,13 +163,11 @@
   transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
   box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
 }
-.read-more-btn:hover::before,
-.btn1O:hover::before {
+.read-more-btn:hover::before {
   opacity: 1;
   width: 116%;
 }
-.read-more-btn:hover::after,
-.btn1O:hover::after {
+.read-more-btn:hover::after {
   opacity: 1;
   width: 120%;
 }

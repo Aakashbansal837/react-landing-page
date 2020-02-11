@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../../../styles/index.scss";
 import { heatmapDisc } from "../../../constants";
 import Coverage from "./Coverage";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.scss";
+import "./styles/index.scss";
 
 import Home from "./components/Home";
 import AOS from "aos";
