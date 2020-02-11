@@ -27,7 +27,6 @@
     flex-basis: auto;
     justify-content: flex-end;
     align-items: center;
-    // margin: 2rem 0;
   }
 
   &-link {
@@ -45,8 +44,6 @@
     }
   }
 }
-
-// login button styling
 
 @mixin link-style($color) {
   text-decoration: none;

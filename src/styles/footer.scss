@@ -32,7 +32,26 @@
     &-data {
       @include disc-text();
       color: $color-white;
+      margin: 1rem 0rem 1rem 0rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+    &-data1 {
+      @include disc-text();
+      color: $color-white;
+      margin: 1rem 0rem 1rem 0rem;
+    }
+  }
+
+  &-download-options {
+    height: 3rem;
+    width: 10rem;
+  }
+
+  &-divider {
+    border: 0.7px solid rgba(255, 255, 255, 0.5);
+    margin-top: 2rem;
   }
 }
 
