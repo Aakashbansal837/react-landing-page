@@ -69,58 +69,42 @@
 
     &-icons {
       .fa.fa-facebook-square {
-        color: $color-white;
-        cursor: pointer;
+        @include Social-media();
 
         &:hover {
-          color: #0e76a8;
-          transition: (all 600ms cubic-bezier(0.99, 0, 0.57, 0.94));
-          transform: (rotate(360deg) scale(1.2));
-          box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+          @include Social-media-hover($clr: #0e76a8);
         }
       }
 
       .fa.fa-twitter {
-        color: $color-white;
-        cursor: pointer;
+        @include Social-media();
 
         &:hover {
-          color: $color-blue;
-          transition: (all 600ms cubic-bezier(0.99, 0, 0.57, 0.94));
-          transform: (rotate(360deg) scale(1.2));
+          @include Social-media-hover($clr: $color-blue);
         }
       }
 
       .fa.fa-instagram {
-        color: $color-white;
-        cursor: pointer;
+        @include Social-media();
 
         &:hover {
-          color: #ee2a7b;
-          transition: (all 600ms cubic-bezier(0.99, 0, 0.57, 0.94));
-          transform: (rotate(360deg) scale(1.2));
+          @include Social-media-hover($clr: #ee2a7b);
         }
       }
 
       .fa.fa-youtube-play {
-        color: $color-white;
-        cursor: pointer;
+        @include Social-media();
 
         &:hover {
-          color: #e43618ee;
-          transition: (all 600ms cubic-bezier(0.99, 0, 0.57, 0.94));
-          transform: (rotate(360deg) scale(1.2));
+          @include Social-media-hover($clr: #e43618ee);
         }
       }
 
       .fa.fa-linkedin-square {
-        color: $color-white;
-        cursor: pointer;
+        @include Social-media();
 
         &:hover {
-          color: #0e76a8;
-          transition: (all 600ms cubic-bezier(0.99, 0, 0.57, 0.94));
-          transform: (rotate(360deg) scale(1.2));
+          @include Social-media-hover($clr: #0e76a8);
         }
       }
     }
@@ -135,88 +119,4 @@
 .footer-divider {
   color: $color-white;
   margin: 0rem 1rem;
-}
-
-.footer-button {
-  height: 100%;
-  width: 100%;
-  padding: 0.5rem 2rem;
-  color: $color-white;
-  background-color: $color-white;
-  text-decoration: none;
-  display: inline-block;
-
-  font-family: $primary-font;
-  font-weight: $weight-light;
-  font-size: 1rem;
-  cursor: hand;
-  text-align: center;
-  border: 1px solid $color-white;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background: transparent !important;
-  z-index: 10;
-}
-
-.footer-button:hover {
-  border: 1px solid $color-black;
-  color: $color-black !important;
-  font-weight: $weight-mid;
-  text-decoration: none;
-}
-.footer-button::before {
-  content: "";
-  text-decoration: none;
-  width: 0%;
-  height: 100%;
-  display: block;
-  background: $color-white;
-  position: absolute;
-  -ms-transform: skewX(-20deg);
-  -webkit-transform: skewX(-20deg);
-  transform: skewX(-20deg);
-  left: -10%;
-  opacity: 1;
-  top: 0;
-  z-index: -12;
-  -moz-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
-}
-
-.footer-button::after {
-  // content: "";
-  width: 0%;
-  height: 100%;
-  display: block;
-  text-decoration: none;
-  background: $color-white;
-  position: absolute;
-  -ms-transform: skewX(-20deg);
-  -webkit-transform: skewX(-20deg);
-  transform: skewX(-20deg);
-  left: -10%;
-  opacity: 0;
-  top: 0;
-  z-index: -15;
-  -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
-  -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
-  -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
-  transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
-  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
-}
-.footer-button:hover::before {
-  opacity: 1;
-  width: 116%;
-}
-.footer-button:hover::after {
-  opacity: 1;
-  width: 120%;
 }

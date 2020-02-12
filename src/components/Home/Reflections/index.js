@@ -16,13 +16,24 @@ const Reflections = () => {
                 <a href="#" className="white-button-btn">
                   See all Reviews
                   <img className="wht-btn-arrow" src={RightArrow} />
-                  <div className="transition"></div>
                 </a>
               </div>
             </div>
           </div>
           <div className="col-md-8 col-lg-8 col-sm-12 col-sm-12">
-            <div className="rfl-slider"></div>
+            <div className="rfl-slider">
+              <div className="rfl-slider-center">
+                <div className="container">
+                  <div className="row">
+                    <div className="rfl-slider-move-left">
+                      {/* <span className="triangle-left"></span> */}
+                    </div>
+                    <div className="rfl-slider-data"></div>
+                    <div className="rfl-slider-move-right"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

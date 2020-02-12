@@ -1,0 +1,83 @@
+.white-button-btn {
+  @include Button-style(
+    $clr: $color-button-white,
+    $bg-clr: $color-white,
+    $border: $color-white
+  );
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  font-weight: $weight-mid;
+  font-size: 1.125rem;
+}
+
+.white-button-btn:hover {
+  @include Button-hover($border: $color-button-white, $clr: $color-white);
+}
+.white-button-btn::before {
+  @include Button-before-effect($clr: $color-button-white);
+}
+
+.read-more-btn {
+  @include Button-style(
+    $clr: $color-button-read-more,
+    $border: $color-button-read-more
+  );
+  padding: 0.75rem 5rem;
+  margin: 0.625rem 0.25rem;
+
+  top: 2.5rem;
+  font-weight: $weight-mid;
+  font-size: 1.125rem;
+}
+
+.read-more-btn:hover {
+  @include Button-hover($border: $color-button-read-more, $clr: $color-white);
+  border: 1px solid;
+}
+.read-more-btn::before {
+  @include Button-before-effect($clr: $color-button-read-more);
+}
+
+.white-button-btn::after,
+.read-more-btn::after {
+  @include Button-after-effect($clr: #4ec9c9);
+}
+
+.footer-button {
+  @include Button-style(
+    $clr: $color-white,
+    $bg-clr: $color-white,
+    $border: $color-white
+  );
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  font-weight: $weight-light;
+  font-size: 1rem;
+}
+
+.footer-button:hover {
+  @include Button-hover($border: $color-black, $clr: $color-black);
+  font-weight: $weight-mid;
+}
+.footer-button::before {
+  @include Button-before-effect($clr: $color-white);
+}
+
+.footer-button::after {
+  @include Button-after-effect($clr: $color-white);
+}
+
+.white-button-btn:hover::before,
+.read-more-btn:hover::before,
+.footer-button:hover::before {
+  opacity: 1;
+  width: 116%;
+}
+.white-button-btn:hover::after,
+.read-more-btn:hover::after,
+.footer-button:hover::after {
+  opacity: 1;
+  width: 120%;
+}

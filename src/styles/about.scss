@@ -24,7 +24,8 @@
         min-height: 18.75rem;
       }
       &-vd iframe {
-        width: 100%;
+        float: right;
+        width: 92%;
         height: 100%;
         border: none;
       }
@@ -87,87 +88,4 @@
   100% {
     margin-top: 10rem;
   }
-}
-
-.read-more-btn {
-  padding: 0.75rem 5rem;
-  margin: 0.625rem 0.25rem;
-  color: $color-button-read-more;
-  text-decoration: none;
-  display: inline-block;
-
-  top: 2.5rem;
-  font-family: $primary-font;
-  font-weight: $weight-mid;
-  font-size: 1.125rem;
-  cursor: hand;
-  text-align: center;
-  border: 1px solid $color-button-read-more;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden !important;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background: transparent !important;
-  z-index: 10;
-}
-
-.read-more-btn:hover {
-  border: 1px solid $color-button-read-more;
-  color: $color-white !important;
-  text-decoration: none;
-}
-.read-more-btn::before {
-  content: "";
-  text-decoration: none;
-  width: 0%;
-  height: 100%;
-  display: block;
-  background: $color-button-read-more;
-  position: absolute;
-  -ms-transform: skewX(-20deg);
-  -webkit-transform: skewX(-20deg);
-  transform: skewX(-20deg);
-  left: -10%;
-  opacity: 1;
-  top: 0;
-  z-index: -12;
-  -moz-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
-}
-
-.read-more-btn::after {
-  // uncomment below content to have 2 different effects
-  // content: "";
-  width: 0%;
-  height: 100%;
-  display: block;
-  text-decoration: none;
-  background: #4ec9c9;
-  position: absolute;
-  -ms-transform: skewX(-20deg);
-  -webkit-transform: skewX(-20deg);
-  transform: skewX(-20deg);
-  left: -10%;
-  opacity: 0;
-  top: 0;
-  z-index: -15;
-  -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
-  -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
-  -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
-  transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
-  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
-}
-.read-more-btn:hover::before {
-  opacity: 1;
-  width: 116%;
-}
-.read-more-btn:hover::after {
-  opacity: 1;
-  width: 120%;
 }
