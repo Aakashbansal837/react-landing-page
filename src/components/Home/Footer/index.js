@@ -2,6 +2,9 @@ import React from "react";
 import { ReactComponent as Logo } from "../../../images/FooterLogo.svg";
 import downloadOption1 from "../../../images/downloadOption1.svg";
 import downloadOption2 from "../../../images/downloadOption2.svg";
+import ContactUsIcon from "../../../images/contact-us.svg";
+import AddressIcon from "../../../images/address.svg";
+import EmailIcon from "../../../images/e-mail.svg";
 
 const Footer = () => {
   return (
@@ -24,7 +27,7 @@ const Footer = () => {
       <div className="ftr-content">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12">
               <div className="ftr-content-head">COMPANY</div>
               <div className="coloumn ">
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
@@ -49,23 +52,23 @@ const Footer = () => {
                 </div>
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
                   <div className="ftr-content-data">
-                    Enabling The Rural Youth To Grasp The …
+                    Enabling The Rural Youth To Grasp The
                   </div>
                 </div>
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
                   <div className="ftr-content-data">
-                    Gyanodaya: New Hopes for Kasturba Gandhi…
+                    Gyanodaya: New Hopes for Kasturba Gandhi
                   </div>
                 </div>
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
                   <div className="ftr-content-data">
-                    Gyanodaya: Eckovation Join Hands with Ada.…
+                    Gyanodaya: Eckovation Join Hands with Ada
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div className="coloumn ">
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
                   <div className="ftr-content-data">
@@ -91,15 +94,50 @@ const Footer = () => {
             <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div className="coloumn ">
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="ftr-content-data1">
-                    125 A, Shahpur Jat, Siri Fort New Delhi- 110049
+                  <div className="row">
+                    <div className="col-1">
+                      <img
+                        className="ftr-content-data1-ic2"
+                        src={AddressIcon}
+                        alt="addr"
+                      />
+                    </div>
+                    <div className="col-11">
+                      <div className="ftr-content-data1">
+                        125 A, Shahpur Jat, Siri Fort New Delhi- 110049
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="ftr-content-data1">+91-9266677335</div>
+                  <div className="row">
+                    <div className="col-1">
+                      <img
+                        className="ftr-content-data1-ic2"
+                        src={ContactUsIcon}
+                        alt="ph"
+                      />
+                    </div>
+                    <div className="col-11">
+                      <div className="ftr-content-data1">+91-9266677335</div>
+                    </div>
+                  </div>
                 </div>
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="ftr-content-data1">info@eckovation.com</div>
+                  <div className="row">
+                    <div className="col-1">
+                      <img
+                        className="ftr-content-data1-ic3"
+                        src={EmailIcon}
+                        alt="email"
+                      />
+                    </div>
+                    <div className="col-11">
+                      <div className="ftr-content-data1">
+                        info@eckovation.com
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
