@@ -70,6 +70,7 @@
     &-icons {
       .fa.fa-facebook-square {
         color: $color-white;
+        cursor: pointer;
 
         &:hover {
           color: #0e76a8;
@@ -81,6 +82,7 @@
 
       .fa.fa-twitter {
         color: $color-white;
+        cursor: pointer;
 
         &:hover {
           color: $color-blue;
@@ -91,6 +93,7 @@
 
       .fa.fa-instagram {
         color: $color-white;
+        cursor: pointer;
 
         &:hover {
           color: #ee2a7b;
@@ -101,6 +104,7 @@
 
       .fa.fa-youtube-play {
         color: $color-white;
+        cursor: pointer;
 
         &:hover {
           color: #e43618ee;
@@ -111,6 +115,7 @@
 
       .fa.fa-linkedin-square {
         color: $color-white;
+        cursor: pointer;
 
         &:hover {
           color: #0e76a8;
@@ -120,6 +125,16 @@
       }
     }
   }
+}
+
+.footer-foot {
+  color: $color-white;
+  cursor: pointer;
+}
+
+.footer-divider {
+  color: $color-white;
+  margin: 0rem 1rem;
 }
 
 .footer-button {

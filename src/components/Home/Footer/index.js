@@ -192,20 +192,13 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-              <div className="row">
-                <div className="col-4">
-                  <div className="footer-foot">Terms of Service</div>
-                </div>
-                <div className="footer-divider">
-                  <div className="footer-foot">Site Map</div>
-                </div>
-                <div className="col-4"></div>
-                <div className="footer-divider"></div>
-                <div className="col-4">
-                  <div className="footer-foot">Privacy Policy</div>
-                </div>
-              </div>
+            <div className="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <span className="footer-foot"> Terms of Service</span>
+              <span className="footer-divider"> | </span>
+              <span className="footer-foot"> Site Map </span>
+              <span className="footer-divider"> | </span>
+              <span className="footer-foot"> Privacy Policy </span>
             </div>
           </div>
         </div>
