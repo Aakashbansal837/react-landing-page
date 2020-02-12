@@ -148,6 +148,52 @@ const Footer = () => {
       <div className="container">
         <div className="ftr-divider"></div>
       </div>
+
+      <div className="container">
+        <div className="ftr-foot">
+          <div className="row">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div className="ftr-foot-cp">
+                <i className="fa fa-copyright" aria-hidden="true" />
+                2020 Eckovation Solutions Private Limited
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div className="ftr-foot-icons">
+                <div className="row">
+                  <div className="col-1"></div>
+                  <div className="col-2">
+                    <i
+                      className="fa fa-facebook-square fa-lg"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <div className="col-2">
+                    <i className="fa fa-twitter fa-lg" aria-hidden="true" />
+                  </div>
+                  <div className="col-2">
+                    <i className="fa fa-instagram fa-lg" aria-hidden="true" />
+                  </div>
+                  <div className="col-2">
+                    <i
+                      className="fa fa-youtube-play fa-lg"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <div className="col-2">
+                    <i
+                      className="fa fa-linkedin-square fa-lg"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <div className="col-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
