@@ -30,13 +30,37 @@ const Reflections = () => {
     }
   ];
   const [active, setActive] = React.useState(0);
+  const [move, setMove] = React.useState("rfl-slider-data-move-right-1");
 
   const changeActive = pos => {
     if (pos >= data.length) {
       setActive(0);
+      if (move === "rfl-slider-data-move-right-1") {
+        setMove("rfl-slider-data-move-right-2");
+      } else {
+        setMove("rfl-slider-data-move-right-1");
+      }
     } else if (pos < 0) {
       setActive(data.length - 1);
+      if (move === "rfl-slider-data-move-left-1") {
+        setMove("rfl-slider-data-move-left-2");
+      } else {
+        setMove("rfl-slider-data-move-left-1");
+      }
     } else {
+      if (pos > active) {
+        if (move === "rfl-slider-data-move-right-1") {
+          setMove("rfl-slider-data-move-right-2");
+        } else {
+          setMove("rfl-slider-data-move-right-1");
+        }
+      } else {
+        if (move === "rfl-slider-data-move-left-1") {
+          setMove("rfl-slider-data-move-left-2");
+        } else {
+          setMove("rfl-slider-data-move-left-1");
+        }
+      }
       setActive(pos);
     }
   };
@@ -61,7 +85,7 @@ const Reflections = () => {
             <div className="rfl-slider">
               <div className="rfl-slider-center">
                 <div className="row">
-                  <div className="d-none d-lg-block ">
+                  <div className="d-none d-lg-inline-block ">
                     <div
                       className="rfl-slider-move-left"
                       onClick={() => changeActive(active - 1)}
@@ -69,39 +93,29 @@ const Reflections = () => {
                       <span className="rfl-slider-move-triangle"></span>
                     </div>
                   </div>
-
-                  {data.map((dt, index) => {
-                    return (
-                      <div
-                        style={{
-                          display: index === active ? "block" : "none"
-                        }}
-                        className={
-                          index === active
-                            ? "rfl-slider-data-active"
-                            : "rfl-slider-data-non-active"
-                        }
-                      >
-                        <div className="rfl-slider-data">
-                          <div className="rfl-slider-data-dt">
-                            <img
-                              className="rfl-slider-data-img"
-                              src={dt.image}
-                            />
-                          </div>
-                          <div className="rfl-slider-data-dt">
-                            <p className="rfl-slider-data-txt-head">
-                              {dt.name}
-                            </p>
-                            <p className="rfl-slider-data-txt-sub">{dt.des}</p>
-                            <p className="rfl-slider-data-txt-dt">{dt.text}</p>
-                          </div>
-                        </div>
+                  <div className={move}>
+                    <div className="rfl-slider-data">
+                      <div className="rfl-slider-data-dt">
+                        <img
+                          className="rfl-slider-data-img"
+                          src={data[active].image}
+                        />
                       </div>
-                    );
-                  })}
+                      <div className="rfl-slider-data-dt">
+                        <p className="rfl-slider-data-txt-head">
+                          {data[active].name}
+                        </p>
+                        <p className="rfl-slider-data-txt-sub">
+                          {data[active].des}
+                        </p>
+                        <p className="rfl-slider-data-txt-dt">
+                          {data[active].text}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-                  <div className="d-none d-lg-block">
+                  <div className="d-none d-lg-inline-block">
                     <div
                       className="rfl-slider-move-right"
                       onClick={() => changeActive(active + 1)}
