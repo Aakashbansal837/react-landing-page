@@ -1,9 +1,9 @@
 import React from "react";
-import BgWall from "../../../images/bg-wall-big.svg";
 import { ReflectionsText } from "../../../constants";
 import RightArrow from "../../../images/right-arrow.svg";
 
 const Reflections = () => {
+  const data = [];
   return (
     <div className="rfl">
       <div className="container">
@@ -26,10 +26,14 @@ const Reflections = () => {
                 <div className="container">
                   <div className="row">
                     <div className="rfl-slider-move-left">
-                      {/* <span className="triangle-left"></span> */}
+                      <span className="rfl-slider-move-triangle"></span>
                     </div>
+
                     <div className="rfl-slider-data"></div>
-                    <div className="rfl-slider-move-right"></div>
+
+                    <div className="rfl-slider-move-right">
+                      <span className="rfl-slider-move-triangle"></span>
+                    </div>
                   </div>
                 </div>
               </div>

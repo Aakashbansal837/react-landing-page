@@ -58,6 +58,7 @@
 
       &-head {
         @include Header-text();
+        color: $color-blue;
       }
       &-dis {
         @include disc-text();

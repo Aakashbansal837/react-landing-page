@@ -27,7 +27,7 @@ const Footer = () => {
       <div className="ftr-content">
         <div className="container">
           <div className="row">
-            <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+            <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div className="ftr-content-head">COMPANY</div>
               <div className="coloumn ">
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12">
               <div className="ftr-content-head">LATEST BLOGS</div>
               <div className="coloumn ">
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
@@ -67,7 +67,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
+            {/* 
             <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div className="coloumn ">
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
@@ -89,9 +89,9 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <div className="coloumn ">
                 <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
                   <div className="row">

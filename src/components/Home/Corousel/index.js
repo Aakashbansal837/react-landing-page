@@ -1,8 +1,8 @@
 import React from "react";
-import crsl1 from "../../../images/crsl1.jpg";
-import crsl2 from "../../../images/crsl2.jpg";
-import crsl3 from "../../../images/crsl3.jpg";
-import crsl4 from "../../../images/crsl4.jpg";
+import crsl1 from "../../../images/crsl1.png";
+import crsl2 from "../../../images/crsl2.png";
+import crsl3 from "../../../images/crsl3.png";
+import crsl4 from "../../../images/crsl4.png";
 
 const Corousel = () => {
   return (
