@@ -48,7 +48,7 @@ export const SvgNames = {
     data: {
       villages: 14,
       schools: 12,
-      teachers: 0,
+      teachers: 76,
       students: 0
     }
   },
@@ -75,7 +75,7 @@ export const SvgNames = {
     data: {
       villages: 13,
       schools: 16,
-      teachers: 0,
+      teachers: 75,
       students: 0
     }
   },

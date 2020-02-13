@@ -1,5 +1,6 @@
 @mixin slider-button() {
   margin-top: 5rem;
+  cursor: pointer;
   height: 8rem;
   width: 2.5rem;
   background-color: $color-blue;
@@ -43,16 +44,55 @@
     width: 100%;
 
     &-center {
-      margin: 2rem 0rem 0rem 4rem;
+      margin-top: 1rem;
       height: 100%;
       width: 80%;
     }
 
     &-data {
       height: 17rem;
-      width: 30rem;
-      background-color: $color-black;
+      width: 36rem;
+      background-color: $color-white;
       border-radius: 0.5rem;
+      display: flex;
+      &-dt {
+        padding: 0.5rem;
+        p {
+          margin: 0rem;
+        }
+      }
+
+      &-active {
+        animation: animateMe 4s forwards;
+      }
+      &-non-active {
+        animation: animateMe2 4s forwards;
+      }
+
+      &-img {
+        margin: 1rem 0.3rem 0rem 0.7rem;
+        height: 14rem;
+        width: 14rem;
+        border-radius: 0.5rem;
+      }
+
+      &-txt {
+        &-head {
+          font-size: 1.5rem;
+          margin-top: 1rem !important;
+          font-weight: $weight-mid + 100;
+        }
+        &-sub {
+          opacity: 0.7;
+        }
+        &-dt {
+          font-size: 1.125rem;
+          margin-top: 1rem !important;
+          line-height: 1.5rem;
+          max-height: 9rem;
+          overflow: hidden;
+        }
+      }
     }
 
     &-move {
@@ -87,4 +127,50 @@
 
 .wht-btn-arrow {
   margin-left: 1rem;
+}
+
+@keyframes animateMe {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes animateMe2 {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    opacity: 1;
+    display: block;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    opacity: 0;
+    display: none;
+  }
 }
