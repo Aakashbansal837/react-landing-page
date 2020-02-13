@@ -1,10 +1,10 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../../images/FooterLogo.svg";
-import downloadOption1 from "../../../images/downloadOption1.svg";
-import downloadOption2 from "../../../images/downloadOption2.svg";
-import ContactUsIcon from "../../../images/contact-us.svg";
-import AddressIcon from "../../../images/address.svg";
-import EmailIcon from "../../../images/e-mail.svg";
+import downloadOption1 from "../../../images/downloadOptions/downloadOption1.svg";
+import downloadOption2 from "../../../images/downloadOptions/downloadOption2.svg";
+import ContactUsIcon from "../../../images/icons/contact-us.svg";
+import AddressIcon from "../../../images/icons/address.svg";
+import EmailIcon from "../../../images/icons/e-mail.svg";
 
 const Footer = () => {
   return (

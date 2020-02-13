@@ -1,92 +1,58 @@
 import React from "react";
-import crsl1 from "../../../images/crsl1.png";
-import crsl2 from "../../../images/crsl2.png";
-import crsl3 from "../../../images/crsl3.png";
-import crsl4 from "../../../images/crsl4.png";
+import crsl1 from "../../../images/corousel/crsl1.png";
+import crsl2 from "../../../images/corousel/crsl2.png";
+import crsl3 from "../../../images/corousel/crsl3.png";
+import crsl4 from "../../../images/corousel/crsl4.png";
 
 const Corousel = () => {
   return (
-    <div className="carousel">
-      <ul className="slides">
-        <input type="radio" name="radio-buttons" id="img-1" />
-        <li className="slide-container">
-          <div className="slide-image">
-            <img className="carousel-img" src={crsl1} />
-          </div>
-          <div className="carousel-controls">
-            <label htmlFor="img-4" className="prev-slide">
-              <span>&lsaquo;</span>
-            </label>
-            <label htmlFor="img-2" className="next-slide">
-              <span>&rsaquo;</span>
-            </label>
-          </div>
-        </li>
-        <input type="radio" name="radio-buttons" id="img-2" checked />
-        <li className="slide-container">
-          <div className="slide-image">
-            <img className="carousel-img" src={crsl2} />
-          </div>
-          <div className="carousel-controls">
-            <label htmlFor="img-1" className="prev-slide">
-              <span>&lsaquo;</span>
-            </label>
-            <label htmlFor="img-3" className="next-slide">
-              <span>&rsaquo;</span>
-            </label>
-          </div>
-        </li>
-        <input type="radio" name="radio-buttons" id="img-3" checked />
-        <li className="slide-container">
-          <div className="slide-image">
-            <img className="carousel-img" src={crsl3} />
-          </div>
-          <div className="carousel-controls">
-            <label htmlFor="img-2" className="prev-slide">
-              <span>&lsaquo;</span>
-            </label>
-            <label htmlFor="img-4" className="next-slide">
-              <span>&rsaquo;</span>
-            </label>
-          </div>
-        </li>
-        <input type="radio" name="radio-buttons" id="img-4" checked />
-        <li className="slide-container">
-          <div className="slide-image">
-            <img className="carousel-img" src={crsl4} />
-          </div>
-          <div className="carousel-controls">
-            <label htmlFor="img-3" className="prev-slide">
-              <span>&lsaquo;</span>
-            </label>
-            <label htmlFor="img-1" className="next-slide">
-              <span>&rsaquo;</span>
-            </label>
-          </div>
-        </li>
-        <div className="carousel-dots">
-          <label
-            htmlFor="img-1"
-            className="carousel-dot"
-            id="img-dot-1"
-          ></label>
-          <label
-            htmlFor="img-2"
-            className="carousel-dot"
-            id="img-dot-2"
-          ></label>
-          <label
-            htmlFor="img-3"
-            className="carousel-dot"
-            id="img-dot-3"
-          ></label>
-          <label
-            htmlFor="img-4"
-            className="carousel-dot"
-            id="img-dot-4"
-          ></label>
+    <div
+      id="carouselExampleIndicators"
+      className="carousel slide"
+      data-ride="carousel"
+    >
+      <ol className="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          className="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img className="d-block w-100" src={crsl1} alt="First slide" />
         </div>
-      </ul>
+        <div className="carousel-item">
+          <img className="d-block w-100" src={crsl2} alt="Second slide" />
+        </div>
+        <div className="carousel-item">
+          <img className="d-block w-100" src={crsl3} alt="Third slide" />
+        </div>
+        <div className="carousel-item">
+          <img className="d-block w-100" src={crsl4} alt="fourth slide" />
+        </div>
+      </div>
+      <a
+        className="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
+      </a>
+      <a
+        className="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="sr-only">Next</span>
+      </a>
     </div>
   );
 };

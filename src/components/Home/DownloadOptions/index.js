@@ -1,5 +1,5 @@
 import React from "react";
-import DownloadButton from "../../../images/DownloadButton.svg";
+import DownloadButton from "../../../images/icons/DownloadButton.svg";
 
 const DownloadOptions = () => {
   return (

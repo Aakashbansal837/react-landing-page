@@ -1,8 +1,8 @@
 import React from "react";
-import BGWall from "../../../images/bg-wall-2.svg";
+import BGWall from "../../../images/background/bg-wall-2.svg";
 import Report from "../../../images/report.png";
 import { ReportsText } from "../../../constants/index";
-import DownloadIcon from "../../../images/download.svg";
+import DownloadIcon from "../../../images/icons/download.svg";
 import DownloadPdf from "../../../pdf/Coffee_table_book.pdf";
 
 const Reports = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { aboutDivTexthead, aboutDivTextDis } from "../../../constants";
-import BgWall from "../../../images/vdo-bg-wall.svg";
-import BgBall from "../../../images/vdo-bg-ball.svg";
+import BgWall from "../../../images/background/vdo-bg-wall.svg";
+import BgBall from "../../../images/background/vdo-bg-ball.svg";
 
 const About = () => {
   return (

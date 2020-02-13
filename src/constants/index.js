@@ -1,7 +1,7 @@
 export const aboutDivTexthead = `Mera Mobile, Mera Vidyalaya`;
 export const aboutDivTextDis = `Gyanodaya Godda, an education initiative has been successfully instituted by Godda District Administration, Adani Foundation and Eckovation. The learning process used in the Model involves audio-visual classrooms having animated and contextualized lectures followed by daily assessments. The first interaction with the students happens in the classroom, where they watch the video screencast on the television. The videos are kept super interactive which ensures a good level attentiveness from the students`;
 
-export const heatmapDisc = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
+export const heatmapDisc = `The program started with just 50 schools in the district has not expanded its reach to more than 230 schools and about 800 classes. The program is being run in all the classes from VI to XII including free coaching for several competitive examinations such as JEE and NEET. `;
 
 export const StrideInfo = `Check this space to learn about the impact Gyanodaya is making on the ground. It includes experiences, success stories, and highlights of the program in the words of our teachers, students, and parents.`;
 export const StrideCard1head = `Ravindra Nath, Principal`;
@@ -17,84 +17,84 @@ export const ReportsText = `Lorem ipsum dolor sit amet, consectetur adipiscing e
 export const ReflectionsText = `Listen to what our partners and several other dignitaries have got to say about Gyanodaya`;
 export const SvgNames = {
   ar1: {
-    name: "area 1",
+    name: "Meherma",
     data: {
-      villages: 1,
-      schools: 1,
-      teachers: 1,
-      students: 1
+      villages: 23,
+      schools: 17,
+      teachers: 187,
+      students: 0
     }
   },
   ar2: {
-    name: "area 2",
+    name: "Thakurgangti",
     data: {
-      villages: 2,
-      schools: 2,
-      teachers: 2,
-      students: 2
+      villages: 16,
+      schools: 23,
+      teachers: 166,
+      students: 0
     }
   },
   ar3: {
-    name: "area 3",
+    name: "Mehagama",
     data: {
-      villages: 3,
-      schools: 3,
-      teachers: 3,
-      students: 3
+      villages: 29,
+      schools: 35,
+      teachers: 352,
+      students: 0
     }
   },
   ar4: {
-    name: "area 4",
+    name: "Bashant Rai",
     data: {
-      villages: 4,
-      schools: 4,
-      teachers: 4,
-      students: 4
+      villages: 14,
+      schools: 12,
+      teachers: 0,
+      students: 0
     }
   },
   ar5: {
-    name: "area 5",
+    name: "Pathargama",
     data: {
-      villages: 5,
-      schools: 5,
-      teachers: 5,
-      students: 5
+      villages: 19,
+      schools: 29,
+      teachers: 206,
+      students: 0
     }
   },
   ar6: {
-    name: "area 6",
+    name: "Godda",
     data: {
-      villages: 6,
-      schools: 6,
-      teachers: 6,
-      students: 6
+      villages: 34,
+      schools: 61,
+      teachers: 478,
+      students: 0
     }
   },
   ar7: {
-    name: "area 7",
+    name: "Sundarpahari",
     data: {
-      villages: 7,
-      schools: 7,
-      teachers: 7,
-      students: 7
+      villages: 13,
+      schools: 16,
+      teachers: 0,
+      students: 0
     }
   },
   ar8: {
-    name: "area 8",
+    name: "Poreyahat",
     data: {
-      villages: 8,
-      schools: 8,
-      teachers: 8,
-      students: 8
+      villages: 31,
+      schools: 41,
+      teachers: 362,
+      students: 0
     }
   },
   ar9: {
-    name: "area 9",
+    name: "Boarijor",
     data: {
-      villages: 9,
-      schools: 9,
-      teachers: 9,
-      students: 9
+      villages: 22,
+      schools: 18,
+      teachers: 115,
+      students: 0
     }
   }
 };

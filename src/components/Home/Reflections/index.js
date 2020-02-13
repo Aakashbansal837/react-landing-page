@@ -1,9 +1,15 @@
 import React from "react";
 import { ReflectionsText } from "../../../constants";
-import RightArrow from "../../../images/right-arrow.svg";
+import RightArrow from "../../../images/icons/right-arrow.svg";
 
 const Reflections = () => {
-  const data = [];
+  const data = [
+    {
+      image: ""
+    }
+  ];
+  const [active, setActive] = React.useState(0);
+
   return (
     <div className="rfl">
       <div className="container">
@@ -25,14 +31,18 @@ const Reflections = () => {
               <div className="rfl-slider-center">
                 <div className="container">
                   <div className="row">
-                    <div className="rfl-slider-move-left">
-                      <span className="rfl-slider-move-triangle"></span>
+                    <div className="d-none d-lg-block ">
+                      <div className="rfl-slider-move-left">
+                        <span className="rfl-slider-move-triangle"></span>
+                      </div>
                     </div>
 
                     <div className="rfl-slider-data"></div>
 
-                    <div className="rfl-slider-move-right">
-                      <span className="rfl-slider-move-triangle"></span>
+                    <div className="d-none d-lg-block">
+                      <div className="rfl-slider-move-right">
+                        <span className="rfl-slider-move-triangle"></span>
+                      </div>
                     </div>
                   </div>
                 </div>

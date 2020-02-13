@@ -1,9 +1,9 @@
 import React from "react";
-import News1 from "../../../images/news1.svg";
-import News2 from "../../../images/news2.svg";
-import News3 from "../../../images/news3.svg";
-import News4 from "../../../images/news4.svg";
-import News5 from "../../../images/news5.svg";
+import News1 from "../../../images/news/news1.svg";
+import News2 from "../../../images/news/news2.svg";
+import News3 from "../../../images/news/news3.svg";
+import News4 from "../../../images/news/news4.svg";
+import News5 from "../../../images/news/news5.svg";
 
 const News = () => {
   return (

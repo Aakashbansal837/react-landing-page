@@ -9,33 +9,12 @@ import {
   StrideCard3txt,
   StrideReadMore
 } from "../../../constants";
-import Card1 from "../../../images/stride-card1.png";
-import Card2 from "../../../images/stride-card2.png";
-import Card3 from "../../../images/stride-card3.jpg";
-import RightArrow from "../../../images/right-arrow.svg";
-import Wall from "../../../images/vdo-bg-wall.svg";
+import Card1 from "../../../images/stride/1.png";
+import Card2 from "../../../images/stride/2.png";
+import Card3 from "../../../images/stride/3.jpg";
+import RightArrow from "../../../images/icons/right-arrow.svg";
 
 const Stride = () => {
-  const StrideCards = [
-    {
-      card: Card1,
-      head: StrideCard1head,
-      txt: StrideCard1txt,
-      rm: StrideReadMore
-    },
-    {
-      card: Card2,
-      head: StrideCard2head,
-      txt: StrideCard2txt,
-      rm: StrideReadMore
-    },
-    {
-      card: Card3,
-      head: StrideCard3head,
-      txt: StrideCard3txt,
-      rm: StrideReadMore
-    }
-  ];
   return (
     <div className="stride">
       <center className="stride-header">Gyanodaya Stride</center>
