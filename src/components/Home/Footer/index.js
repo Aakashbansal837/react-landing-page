@@ -104,7 +104,7 @@ const Footer = () => {
                     </div>
                     <div className="col-11">
                       <div className="ftr-content-data1">
-                        125 A, Shahpur Jat, Siri Fort New Delhi- 110049
+                        125 , Shahpur Jat, Siri Fort New Delhi- 110049
                       </div>
                     </div>
                   </div>
