@@ -1,13 +1,58 @@
+@mixin MoveBTN {
+  height: 10rem;
+  width: 2.5rem;
+  background: $color-blue;
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .gallery {
   margin-top: 6rem;
+
   &-header {
     @include header-main();
   }
 
   &-main {
-    height: 25rem;
+    min-height: 25rem;
     margin-top: 4rem;
     width: 100%;
-    background-color: $color-black;
+  }
+
+  &-data {
+    &-center {
+      background: $color-black;
+      width: 60%;
+      min-height: 25rem;
+    }
+
+    &-move {
+      &-left {
+        @include MoveBTN();
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+
+        span::before {
+          content: "\25c0";
+          color: $color-white;
+        }
+      }
+      &-right {
+        @include MoveBTN();
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+
+        span::before {
+          content: "\25b6";
+          color: $color-white;
+        }
+      }
+
+      &-triangle {
+        font-size: 1.4rem;
+      }
+    }
   }
 }

@@ -93,7 +93,7 @@ const Reflections = () => {
             <div className="rfl-slider">
               <div className="rfl-slider-center">
                 <div className="row">
-                  <div className="d-none d-lg-inline-block ">
+                  <div className="d-none d-lg-flex ">
                     <div
                       className="rfl-slider-move-left"
                       onClick={() => changeActive(active - 1)}
@@ -127,7 +127,7 @@ const Reflections = () => {
                     </div>
                   </div>
 
-                  <div className="d-none d-lg-inline-block">
+                  <div className="d-none d-lg-flex">
                     <div
                       className="rfl-slider-move-right"
                       onClick={() => changeActive(active + 1)}
