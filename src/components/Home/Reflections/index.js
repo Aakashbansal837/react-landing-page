@@ -31,8 +31,15 @@ const Reflections = () => {
   ];
   const [active, setActive] = React.useState(0);
   const [move, setMove] = React.useState("rfl-slider-data-move-right-1");
+  const [focus, setFocus] = React.useState("rfl-slider-data-focus-1");
 
   const changeActive = pos => {
+    if (focus === "rfl-slider-data-focus-1") {
+      setFocus("rfl-slider-data-focus-2");
+    } else {
+      setFocus("rfl-slider-data-focus-1");
+    }
+
     if (pos >= data.length) {
       setActive(0);
       if (move === "rfl-slider-data-move-right-1") {
@@ -61,6 +68,7 @@ const Reflections = () => {
           setMove("rfl-slider-data-move-left-1");
         }
       }
+
       setActive(pos);
     }
   };
@@ -93,22 +101,26 @@ const Reflections = () => {
                       <span className="rfl-slider-move-triangle"></span>
                     </div>
                   </div>
-                  <div className={move}>
-                    <div className="rfl-slider-data">
-                      <div className="rfl-slider-data-dt">
+
+                  <div className="rfl-slider-data">
+                    <div className="rfl-slider-data-dt">
+                      <div className={focus}>
                         <img
                           className="rfl-slider-data-img"
                           src={data[active].image}
                         />
                       </div>
-                      <div className="rfl-slider-data-dt">
+                    </div>
+
+                    <div className="rfl-slider-data-dt">
+                      <div className={move}>
                         <p className="rfl-slider-data-txt-head">
                           {data[active].name}
                         </p>
                         <p className="rfl-slider-data-txt-sub">
                           {data[active].des}
                         </p>
-                        <p className="rfl-slider-data-txt-dt">
+                        <p className="rfl-slider-data-txt-tx">
                           {data[active].text}
                         </p>
                       </div>
