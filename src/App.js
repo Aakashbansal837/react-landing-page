@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/index.scss";
+import { BrowserRouter, Route } from "react-router-dom";
 
 import Home from "./components/Home";
 import AOS from "aos";
@@ -8,9 +9,10 @@ AOS.init();
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Route exact path="/" component={Home}></Route>
+      <Route exact path="/home" component={Home}></Route>
+    </BrowserRouter>
   );
 }
 
