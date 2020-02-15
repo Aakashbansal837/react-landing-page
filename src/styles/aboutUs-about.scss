@@ -19,12 +19,8 @@
     }
 
     &-img {
-      background-image: url(../images/AboutUS/2.jpg);
-
-      background-size: cover;
       border-radius: 0.5rem;
       box-shadow: 0 0 0.65rem 0 rgba(33, 42, 57, 0.15);
-
       margin-bottom: 28rem;
       @include max-ht-wd($ht: 26.37rem, $wd: 32.56rem);
     }
@@ -46,7 +42,5 @@
   &-bottom {
     margin-top: 4rem;
     height: 20rem;
-    background-image: url(../images/AboutUS/3.svg);
-    background-size: cover;
   }
 }
