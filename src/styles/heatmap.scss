@@ -1,15 +1,15 @@
 .htmp {
-  margin-top: 200px;
+  margin-top: 12rem;
   &-header {
     @include header-main();
   }
 
   &-txt {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
 
   &-mp {
-    margin-top: 60px;
+    margin-top: 3.75rem;
   }
 
   &-disc {

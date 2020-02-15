@@ -2,16 +2,18 @@ import React, { Component } from "react";
 import { heatmapDisc } from "../../../constants";
 import Coverage from "./Coverage";
 
+const MainData = {
+  name: "Godda",
+  data: {
+    villages: 201,
+    schools: 246,
+    teachers: 2017,
+    students: 53765
+  }
+};
+
 class Heatmap extends Component {
-  state = {
-    name: "Godda",
-    data: {
-      villages: 0,
-      schools: 0,
-      teachers: 0,
-      students: 0
-    }
-  };
+  state = MainData;
   setHeatMapData(name, data) {
     this.setState({
       name: name,
@@ -59,7 +61,13 @@ class Heatmap extends Component {
                               data-aos="zoom-in-down"
                               data-aos-duration="1000"
                             >
-                              <center className="htmp-data-ht">
+                              <center
+                                style={{ cursor: "pointer" }}
+                                className="htmp-data-ht"
+                                onClick={() => {
+                                  this.setState(MainData);
+                                }}
+                              >
                                 {this.state.name}
                               </center>
                             </div>

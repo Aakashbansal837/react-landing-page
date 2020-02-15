@@ -2,7 +2,7 @@
   height: 10rem;
   width: 2.5rem;
   background: $color-blue;
-  margin-top: 7rem;
+  margin-top: 9rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +24,15 @@
   &-data {
     margin-left: 5rem;
     &-center {
-      background: $color-black;
       width: 60rem;
       min-height: 25rem;
+    }
+
+    &-slide {
+      background-color: $color-black;
+      height: 12rem;
+      margin: 1rem 0rem;
+      border-radius: 0.5rem;
     }
 
     &-move {

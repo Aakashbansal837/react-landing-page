@@ -17,12 +17,12 @@ export const ReportsText = `Lorem ipsum dolor sit amet, consectetur adipiscing e
 export const ReflectionsText = `Listen to what our partners and several other dignitaries have got to say about Gyanodaya`;
 export const SvgNames = {
   ar1: {
-    name: "Meherma",
+    name: "Meharma",
     data: {
       villages: 23,
       schools: 17,
       teachers: 187,
-      students: 0
+      students: 5940
     }
   },
   ar2: {
@@ -31,25 +31,25 @@ export const SvgNames = {
       villages: 16,
       schools: 23,
       teachers: 166,
-      students: 0
+      students: 4899
     }
   },
   ar3: {
-    name: "Mehagama",
+    name: "Mahagama",
     data: {
       villages: 29,
       schools: 35,
       teachers: 352,
-      students: 0
+      students: 7166
     }
   },
   ar4: {
-    name: "Bashant Rai",
+    name: "Basantrai",
     data: {
       villages: 14,
       schools: 12,
       teachers: 76,
-      students: 0
+      students: 4190
     }
   },
   ar5: {
@@ -58,7 +58,7 @@ export const SvgNames = {
       villages: 19,
       schools: 29,
       teachers: 206,
-      students: 0
+      students: 6156
     }
   },
   ar6: {
@@ -67,34 +67,34 @@ export const SvgNames = {
       villages: 34,
       schools: 61,
       teachers: 478,
-      students: 0
+      students: 10875
     }
   },
   ar7: {
-    name: "Sundarpahari",
+    name: "Sunderpahari",
     data: {
       villages: 13,
       schools: 16,
       teachers: 75,
-      students: 0
+      students: 1648
     }
   },
   ar8: {
-    name: "Poreyahat",
+    name: "Poraiyahat",
     data: {
       villages: 31,
       schools: 41,
       teachers: 362,
-      students: 0
+      students: 8177
     }
   },
   ar9: {
-    name: "Boarijor",
+    name: "Boarijore",
     data: {
       villages: 22,
       schools: 18,
       teachers: 115,
-      students: 0
+      students: 1646
     }
   }
 };
