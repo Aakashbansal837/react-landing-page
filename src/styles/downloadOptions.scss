@@ -19,7 +19,7 @@
     }
 
     &-download {
-      margin-top: 1.5rem;
+      margin: 1.5rem 0rem;
       height: 2.6rem;
       border-radius: 0.4rem;
       box-shadow: 0 2px 6px 0 rgba(33, 42, 57, 0.25);
@@ -30,7 +30,69 @@
 }
 
 .vertical-divider {
-  height: 11rem;
+  min-height: 11rem;
   border: 0.02rem solid $color-black;
   opacity: 0.5;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .vertical-divider {
+    min-height: 0rem;
+  }
+  .dwnld {
+    &-main {
+      padding-top: 1rem;
+
+      &-header {
+        padding-top: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .vertical-divider {
+    min-height: 0rem;
+  }
+
+  .dwnld {
+    &-main {
+      padding-top: 1.5rem;
+
+      &-header {
+        padding-top: 2rem;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .vertical-divider {
+    min-height: 11rem;
+  }
+  .dwnld {
+    &-main {
+      padding-top: 2rem;
+
+      &-header {
+        padding-top: 2.5rem;
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .dwnld {
+    &-main {
+      padding-top: 2rem;
+
+      &-header {
+        padding-top: 2.5rem;
+      }
+    }
+  }
 }
