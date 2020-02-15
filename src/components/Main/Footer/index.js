@@ -153,14 +153,14 @@ const Footer = () => {
         <div className="ftr-foot">
           <div className="row">
             <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <div className="ftr-foot-cp">
+              <center className="ftr-foot-cp">
                 <i className="fa fa-copyright" aria-hidden="true" />
                 2020 Eckovation Solutions Private Limited
-              </div>
+              </center>
             </div>
 
             <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <div className="ftr-foot-icons">
+              <center className="ftr-foot-icons">
                 <div className="row">
                   <div className="col-1"></div>
                   <div className="col-2">
@@ -189,17 +189,17 @@ const Footer = () => {
                   </div>
                   <div className="col-1"></div>
                 </div>
-              </div>
+              </center>
             </div>
 
             <div className="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
-            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <center className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <span className="footer-foot"> Terms of Service</span>
               <span className="footer-divider"> | </span>
               <span className="footer-foot"> Site Map </span>
               <span className="footer-divider"> | </span>
               <span className="footer-foot"> Privacy Policy </span>
-            </div>
+            </center>
           </div>
         </div>
       </div>
