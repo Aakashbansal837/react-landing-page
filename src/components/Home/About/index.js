@@ -42,7 +42,7 @@ const About = () => {
               <span className="abt-dt-txt-dis">{aboutDivTextDis}</span>
             </div>
             <div className="read-more">
-              <a href="#" className="read-more-btn">
+              <a href="/aboutUs" className="read-more-btn">
                 Read more
               </a>
             </div>
