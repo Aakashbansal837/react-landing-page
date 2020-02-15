@@ -5,15 +5,18 @@ const Navbar = () => {
   return (
     <nav className="nvbr">
       <div className=" container nvbr-container">
-        <Logo className="nvbr-logo" />
+        <a href="/home">
+          <Logo className="nvbr-logo" />
+        </a>
+
         <ul className="nvbr-menu">
           <li>
-            <a href="#" className="nvbr-link">
+            <a href="/home" className="nvbr-link">
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="nvbr-link">
+            <a href="/aboutUs" className="nvbr-link">
               About Us
             </a>
           </li>

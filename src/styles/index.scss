@@ -4,15 +4,23 @@
 @import "./buttons.scss";
 
 @import "../App.scss";
-@import "./about.scss";
-@import "./corousel.scss";
+// common components
+@import "./navbar.scss";
 @import "./downloadOptions.scss";
 @import "./footer.scss";
+
+// home page
+@import "./about.scss";
+@import "./corousel.scss";
 @import "./gallery.scss";
 @import "./heatmap.scss";
-@import "./navbar.scss";
 @import "./news.scss";
 @import "./partners.scss";
 @import "./reflections.scss";
 @import "./reports.scss";
 @import "./stride.scss";
+
+// about us
+
+@import "./aboutUs-about.scss";
+@import "./journey.scss";

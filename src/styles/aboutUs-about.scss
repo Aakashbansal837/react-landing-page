@@ -1,0 +1,43 @@
+.abus {
+  &-container {
+    padding: 0 4rem;
+  }
+  &-abt {
+    margin-top: 6rem;
+  }
+
+  &-header {
+    @include header-main();
+  }
+
+  &-main {
+    margin-top: 4rem;
+    &-data {
+      margin-top: 4rem;
+      @include Header-text-4();
+      padding-bottom: 4rem;
+    }
+
+    &-img {
+      background-image: url(https://marvel-live.freetls.fastly.net/canvas/2019/8/ea94acbbfcde41d0bb27f1397ab35a34?quality=95&fake=.png);
+
+      background-size: cover;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 0.65rem 0 rgba(33, 42, 57, 0.15);
+      width: 32.56rem;
+      height: 26.37rem;
+    }
+  }
+
+  &-right {
+    &-head {
+      @include Header-text-2();
+      color: $color-blue;
+    }
+
+    &-data {
+      margin-top: 1rem;
+      @include disc-text();
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Main/Navbar";
 import Corousel from "./Corousel";
 import Partners from "./Partners";
 import About from "./About";
@@ -9,8 +9,8 @@ import Reports from "./Reports";
 import Reflections from "./Reflections";
 import News from "./News";
 import Gallery from "./Gallery";
-import DownloadOptions from "./DownloadOptions";
-import Footer from "./Footer";
+import DownloadOptions from "../Main/DownloadOptions";
+import Footer from "../Main/Footer";
 import Lazyload from "react-lazyload";
 
 const Home = () => {

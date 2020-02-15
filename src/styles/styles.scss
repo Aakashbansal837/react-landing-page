@@ -18,7 +18,7 @@
 @mixin header-main() {
   font-size: $head-text;
   font-family: $primary-font;
-  font-weight: $weight-mid;
+  font-weight: $weight-mid; //
   line-height: $head-line-height;
   margin-top: $head-margin-top;
 }
@@ -47,21 +47,21 @@
   font-family: $primary-font;
   color: $color-black;
   font-size: $size-dis-head;
-  font-weight: $weight-mid;
+  font-weight: $weight-mid; //
 }
 
 @mixin Header-text-3() {
   font-family: $primary-font;
   color: $color-black;
   font-size: $size-dis-head-2;
-  font-weight: $weight-mid;
+  font-weight: $weight-mid; //
 }
 
 @mixin Header-text-4() {
   font-family: $primary-font;
   color: $color-black;
   font-size: $size-dis-head-3;
-  font-weight: $weight-mid;
+  font-weight: $weight-mid; //
 }
 
 @mixin disc-text() {
