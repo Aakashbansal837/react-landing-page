@@ -1,3 +1,20 @@
+@mixin link-style($color) {
+  text-decoration: none;
+  font-family: $primary-font;
+  color: $color;
+  text-align: center;
+}
+@mixin slider-button() {
+  margin-top: 5rem;
+  cursor: pointer;
+  height: 8rem;
+  width: 2.5rem;
+  background-color: $color-blue;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 @mixin header-main() {
   font-size: $head-text;
   font-family: $primary-font;
