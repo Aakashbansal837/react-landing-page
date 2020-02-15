@@ -19,6 +19,9 @@ const About = () => {
               <div className="abus-right-head">{aboutDivTexthead}</div>
               <div className="abus-right-data">{AboutUsDiscText}</div>
             </div>
+            <div className="col-12">
+              <div className="abus-bottom"></div>
+            </div>
           </div>
         </div>
       </div>
