@@ -1,0 +1,9 @@
+.abs {
+  top: 5rem;
+  &-main {
+    min-height: 25rem;
+    &-img {
+      width: 100%;
+    }
+  }
+}

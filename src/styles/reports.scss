@@ -11,7 +11,6 @@
     &-dt {
       margin: 2.5rem 0rem 0rem 2.5rem;
       min-height: 22.125rem;
-      @include max-ht-wd($ht: 22.125rem, $wd: 50rem);
       background-color: $color-white;
       padding: 2rem 0rem 0rem 1rem;
       position: absolute;
@@ -28,7 +27,8 @@
       }
 
       &-data {
-        @include max-ht-wd($ht: 18.0625rem, $wd: 29.8125rem);
+        max-width: 29rem;
+        // @include max-ht-wd($ht: 18.0625rem, $wd: 29.8125rem);
 
         &-head {
           @include Header-text-4();
@@ -45,6 +45,7 @@
           background-color: $color-white;
           font-size: 1.125rem;
           margin-top: 5.5rem;
+          margin-bottom: 2rem;
           bottom: 0rem;
           cursor: pointer;
           &-span {
@@ -62,6 +63,77 @@
     &-bg {
       @include max-ht-wd($ht: 27.0625rem, $wd: 20.875rem);
       position: absolute;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .report {
+    &-main {
+      margin-left: 0%;
+      margin-bottom: 13rem;
+      &-dt {
+        &-data {
+          margin-top: 2rem;
+          padding: 0 1.5rem;
+          &-dw {
+            margin-top: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .report {
+    &-main {
+      margin-left: 0%;
+      margin-bottom: 14rem;
+      &-dt {
+        &-data {
+          margin-top: 2rem;
+          padding: 0rem 1.5rem;
+          &-dw {
+            margin-top: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .report {
+    &-main {
+      margin-left: 5%;
+      margin-bottom: 0rem;
+      &-dt {
+        &-data {
+          margin-top: 0rem;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .report {
+    &-main {
+      margin-left: 15%;
+
+      &-dt {
+        &-data {
+          &-head {
+            margin-top: 0rem;
+          }
+        }
+      }
     }
   }
 }
