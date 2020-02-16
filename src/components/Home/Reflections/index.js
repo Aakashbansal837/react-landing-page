@@ -77,7 +77,7 @@ const Reflections = () => {
     <div className="rfl">
       <div className="container">
         <div className="row">
-          <div className="col-md-4 col-lg-4 col-sm-12 col-sm-12">
+          <div className="col-md-12 col-lg-3 col-sm-12 col-sm-12">
             <div className="rfl-textbox">
               <div className="rfl-textbox-header">Reflections</div>
               <div className="rfl-textbox-txt">{ReflectionsText}</div>
@@ -89,11 +89,11 @@ const Reflections = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-8 col-lg-8 col-sm-12 col-sm-12">
+          <div className="col-md-12 col-lg-9 col-sm-12 col-sm-12">
             <div className="rfl-slider">
               <div className="rfl-slider-center">
                 <div className="row">
-                  <div className="d-none d-lg-flex ">
+                  <div className="d-none d-md-block ">
                     <div
                       className="rfl-slider-move-left"
                       onClick={() => changeActive(active - 1)}
@@ -103,36 +103,66 @@ const Reflections = () => {
                   </div>
 
                   <div className="rfl-slider-data">
-                    <div className="rfl-slider-data-dt">
-                      <div className={focus}>
-                        <img
-                          className="rfl-slider-data-img"
-                          src={data[active].image}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="rfl-slider-data-dt">
-                      <div className={move}>
-                        <p className="rfl-slider-data-txt-head">
-                          {data[active].name}
-                        </p>
-                        <p className="rfl-slider-data-txt-sub">
-                          {data[active].des}
-                        </p>
-                        <p className="rfl-slider-data-txt-tx">
-                          {data[active].text}
-                        </p>
+                    <div className="container">
+                      <div className="row">
+                        <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5 px-0">
+                          <div className="rfl-slider-data-dt">
+                            <div className={focus}>
+                              <img
+                                className="rfl-slider-data-img"
+                                src={data[active].image}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                          <div className="rfl-slider-data-dt">
+                            <div className={move}>
+                              <p className="rfl-slider-data-txt-head">
+                                {data[active].name}
+                              </p>
+                              <p className="rfl-slider-data-txt-sub">
+                                {data[active].des}
+                              </p>
+                              <p className="rfl-slider-data-txt-tx">
+                                {data[active].text}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="d-none d-lg-flex">
+                  <div className="d-none d-md-block">
                     <div
                       className="rfl-slider-move-right"
                       onClick={() => changeActive(active + 1)}
                     >
                       <span className="rfl-slider-move-triangle"></span>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-2"></div>
+                  <div className="col-4">
+                    <div className="d-sm-block d-md-none ">
+                      <div
+                        className="rfl-slider-move-left"
+                        onClick={() => changeActive(active - 1)}
+                      >
+                        <span className="rfl-slider-move-triangle"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="d-sm-block d-md-none">
+                      <div
+                        className="rfl-slider-move-right"
+                        onClick={() => changeActive(active + 1)}
+                      >
+                        <span className="rfl-slider-move-triangle"></span>
+                      </div>
                     </div>
                   </div>
                 </div>

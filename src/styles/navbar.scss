@@ -64,6 +64,9 @@
   }
 
   &-data {
+    &:before {
+      opacity: 0;
+    }
     left: 0rem;
     height: 100vh;
     background-color: $color-white;

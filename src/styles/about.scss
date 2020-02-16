@@ -17,6 +17,7 @@
   &-dt {
     &-vdo {
       @include div-box();
+
       &-vd {
         @include max-ht-wd($ht: 22.598125rem, $wd: 33.7975rem);
         z-index: 2;
@@ -89,5 +90,52 @@
   }
   100% {
     margin-top: 10rem;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .abt {
+    &-dt {
+      &-vdo {
+        min-height: 12rem;
+        height: max-content;
+        position: relative;
+        margin-top: 4rem;
+        &-vd {
+          @include max-ht-wd($ht: 18rem, $wd: 27.7975rem);
+          z-index: 2;
+          left: 1rem;
+          position: absolute;
+          min-height: 14.75rem;
+        }
+        &-vd iframe {
+          float: right;
+          width: 92%;
+          height: 100%;
+          border: none;
+        }
+        &-bg {
+          &-wall {
+            @include max-ht-wd($ht: 15.8575rem, $wd: 18.569375rem);
+            position: absolute;
+            left: -1.5rem;
+
+            &-img {
+              @include max-ht-wd($ht: 15.8575rem, $wd: 18.569375rem);
+            }
+          }
+          &-ball {
+            @include max-ht-wd($ht: 6rem, $wd: 6rem);
+            position: absolute;
+            z-index: 1;
+            left: 12rem;
+            &-img {
+              @include max-ht-wd($ht: 6rem, $wd: 6rem);
+            }
+          }
+        }
+      }
+    }
   }
 }

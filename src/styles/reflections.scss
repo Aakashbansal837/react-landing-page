@@ -197,3 +197,275 @@
     opacity: 1;
   }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .rfl {
+    margin-top: 22rem;
+    min-height: 20rem;
+    &-textbox {
+      margin-top: 0;
+      margin-left: 1rem;
+
+      &-txt {
+        margin-top: 2rem;
+        width: 100%;
+      }
+
+      &-reviews {
+        margin-top: 4rem;
+        width: 14rem;
+        height: 3rem;
+      }
+    }
+
+    &-slider {
+      padding: 5rem 0rem;
+      height: 100%;
+      width: 100%;
+
+      &-center {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        height: 100%;
+        width: 90%;
+      }
+
+      &-data {
+        min-height: 17rem;
+        @include max-ht-wd($ht: 37rem, $wd: 36rem);
+        width: 22rem;
+
+        &-dt {
+          padding: 0.5rem;
+
+          p {
+            margin: 0rem;
+          }
+        }
+
+        &-img {
+          margin: 1rem 0.3rem 0rem 2rem;
+          height: 16rem;
+          width: 16rem;
+          border-radius: 0.5rem;
+        }
+
+        &-txt {
+          &-head {
+            padding: 0 1rem;
+          }
+          &-sub {
+            padding: 0 1rem;
+          }
+          &-tx {
+            padding: 0 1rem;
+          }
+        }
+      }
+
+      &-move {
+        &-left {
+          margin-top: 3rem;
+          height: 5rem;
+          width: 5rem;
+        }
+
+        &-right {
+          margin-top: 3rem;
+          height: 5rem;
+          width: 5rem;
+        }
+
+        &-triangle {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .rfl {
+    margin-top: 22rem;
+    min-height: 20rem;
+    &-textbox {
+      margin-top: 0;
+      margin-left: 1rem;
+
+      &-txt {
+        margin-top: 2rem;
+        width: 100%;
+      }
+
+      &-reviews {
+        margin-top: 4rem;
+        width: 14rem;
+        height: 3rem;
+      }
+    }
+
+    &-slider {
+      padding: 5rem 0rem;
+      height: 100%;
+      width: 100%;
+
+      &-center {
+        margin-top: 1rem;
+        margin-left: 5rem;
+        height: 100%;
+        width: 90%;
+      }
+
+      &-data {
+        min-height: 17rem;
+        @include max-ht-wd($ht: 37rem, $wd: 36rem);
+        width: 28rem;
+
+        &-img {
+          margin: 3rem 4rem 0rem 4rem;
+          height: 19rem;
+          width: 19rem;
+        }
+
+        &-txt {
+          &-head {
+            padding: 0 3rem;
+          }
+          &-sub {
+            padding: 0 3rem;
+          }
+          &-tx {
+            padding: 0 3rem;
+          }
+        }
+      }
+
+      &-move {
+        &-left {
+          margin-top: 3rem;
+          height: 5rem;
+          width: 5rem;
+        }
+
+        &-right {
+          margin-top: 3rem;
+          height: 5rem;
+          width: 5rem;
+        }
+
+        &-triangle {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .rfl {
+    margin-top: 6rem;
+    min-height: 30rem;
+    width: 100%;
+    background-image: url(../images/background/bg-wall-big.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-textbox {
+      margin-top: 5rem;
+
+      &-header {
+        @include header-main();
+      }
+
+      &-txt {
+        @include disc-text();
+        margin-top: 2rem;
+        width: 80%;
+      }
+
+      &-reviews {
+        margin-top: 7rem;
+        background: $color-white !important;
+        width: 14rem;
+        height: 3rem;
+        border-radius: 5px;
+      }
+    }
+
+    &-slider {
+      padding: 5rem 0rem;
+      height: 100%;
+      width: 100%;
+
+      &-center {
+        margin-top: 1rem;
+        height: 100%;
+      }
+
+      &-data {
+        min-height: 17rem;
+        @include max-ht-wd($ht: 17rem, $wd: 36rem);
+        border-radius: 0.5rem;
+        background: $color-white;
+        display: flex;
+
+        &-dt {
+          padding: 0.5rem;
+
+          p {
+            margin: 0rem;
+          }
+        }
+
+        &-img {
+          margin: 1rem 0.3rem 0rem 0.7rem;
+          height: 14rem;
+          width: 14rem;
+          border-radius: 0.5rem;
+        }
+
+        &-txt {
+          &-head {
+            padding: 0;
+          }
+          &-sub {
+            padding: 0;
+          }
+          &-tx {
+            padding: 0;
+          }
+        }
+      }
+
+      &-move {
+        &-left {
+          @include slider-button();
+          border-top-left-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+
+          span::before {
+            content: "\25c0";
+            color: $color-white;
+          }
+        }
+
+        &-right {
+          @include slider-button();
+          border-top-right-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+
+          span::before {
+            content: "\25b6";
+            color: $color-white;
+          }
+        }
+
+        &-triangle {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

@@ -27,7 +27,7 @@ const About = () => {
             <div className="col-12">
               <div className="abus-bottom">
                 <img
-                  className="d-block w-100"
+                  className="d-block w-100 h-100"
                   src={BottomImg}
                   alt="about img"
                 />
