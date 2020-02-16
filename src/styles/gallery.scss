@@ -23,9 +23,10 @@
   }
 
   &-data {
-    margin-left: 5rem;
     &-center {
-      width: 60rem;
+      left: 0;
+      z-index: -20;
+      overflow: hidden;
       min-height: 25rem;
     }
 
@@ -34,10 +35,17 @@
       height: 12rem;
       margin: 1rem 0rem;
       border-radius: 0.5rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 0.5rem;
+      }
     }
 
-    &-move {
+    &-moveData {
       &-left {
+        float: right;
         @include MoveBTN();
         border-top-left-radius: 0.5rem;
         border-bottom-left-radius: 0.5rem;
@@ -62,5 +70,62 @@
         font-size: 1.4rem;
       }
     }
+  }
+}
+
+.glry {
+  &-moveData {
+    &-left {
+      &-1 {
+        animation: slide-left-1 2.5s liner backwards;
+      }
+      &-2 {
+        animation: slide-left-2 2.5s liner backwards;
+      }
+    }
+    &-right {
+      &-1 {
+        animation: slide-right-1 0.5s liner backwards;
+      }
+      &-2 {
+        animation: slide-right-2 0.5s liner backwards;
+      }
+    }
+  }
+}
+
+@keyframes slide-left-1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -111rem;
+  }
+}
+
+@keyframes slide-left-2 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -111rem;
+  }
+}
+
+@keyframes slide-right-1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-right-2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
