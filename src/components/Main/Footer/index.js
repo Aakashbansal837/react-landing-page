@@ -28,45 +28,137 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <div className="ftr-content-head">COMPANY</div>
-              <div className="coloumn ">
-                <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="ftr-content-data">About Us</div>
+              <div className="d-none d-md-block">
+                <div className="ftr-content-head">COMPANY</div>
+                <div className="coloumn ">
+                  <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
+                    <div className="ftr-content-data">About Us</div>
+                  </div>
+                  <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
+                    <div className="ftr-content-data">Contact Us</div>
+                  </div>
+                  <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
+                    <div className="ftr-content-data">Blogs</div>
+                  </div>
                 </div>
-                <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="ftr-content-data">Contact Us</div>
+              </div>
+              <div
+                id="accordion"
+                role="tablist"
+                aria-multiselectable="true"
+                className="d-sm-block d-md-none"
+              >
+                <div role="tab" id="headingOne">
+                  <div className="ftr-card-header">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                      className="ftr-content-head"
+                    >
+                      COMPANY
+                    </a>
+                  </div>
                 </div>
-                <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="ftr-content-data">Blogs</div>
+                <div
+                  id="collapseOne"
+                  className="collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingOne"
+                >
+                  <div className="ftr-card">
+                    <ul className="ftr-card-data">
+                      <li>
+                        <a href="#">About Us</a>
+                      </li>
+                      <li>
+                        <a href="#">Contact Us</a>
+                      </li>
+                      <li>
+                        <a href="#">Blogs</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-              <div className="ftr-content-head">LATEST BLOGS</div>
-              <div className="coloumn ">
-                <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="ftr-content-data">
-                    Launch of Gyanodaya Coffee Table Book
+              <div className="d-none d-md-block">
+                <div className="ftr-content-head">LATEST BLOGS</div>
+                <div className="coloumn ">
+                  <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
+                    <div className="ftr-content-data">
+                      Launch of Gyanodaya Coffee Table Book
+                    </div>
+                  </div>
+                  <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
+                    <div className="ftr-content-data">
+                      Enabling The Rural Youth To Grasp The
+                    </div>
+                  </div>
+                  <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
+                    <div className="ftr-content-data">
+                      Gyanodaya: New Hopes for Kasturba Gandhi
+                    </div>
+                  </div>
+                  <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
+                    <div className="ftr-content-data">
+                      Gyanodaya: Eckovation Join Hands with Ada
+                    </div>
                   </div>
                 </div>
-                <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="ftr-content-data">
-                    Enabling The Rural Youth To Grasp The
+              </div>
+              <div
+                id="accordion"
+                role="tablist"
+                aria-multiselectable="true"
+                className="d-sm-block d-md-none"
+              >
+                <div role="tab" id="headingOne">
+                  <div className="ftr-card-header">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                      className="ftr-content-head"
+                    >
+                      LATEST BLOGS
+                    </a>
                   </div>
                 </div>
-                <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="ftr-content-data">
-                    Gyanodaya: New Hopes for Kasturba Gandhi
-                  </div>
-                </div>
-                <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="ftr-content-data">
-                    Gyanodaya: Eckovation Join Hands with Ada
+                <div
+                  id="collapseTwo"
+                  className="collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingOne"
+                >
+                  <div className="ftr-card">
+                    <ul className="ftr-card-data">
+                      <li>
+                        <a href="#">Launch of Gyanodaya Coffee Table Book</a>
+                      </li>
+                      <li>
+                        <a href="#">Enabling The Rural Youth To Grasp The</a>
+                      </li>
+                      <li>
+                        <a href="#">Gyanodaya: New Hopes for Kasturba Gandhi</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Gyanodaya: Eckovation Join Hands with Ada
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
+
             {/* 
             <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div className="coloumn ">
@@ -92,49 +184,51 @@ const Footer = () => {
             </div> */}
 
             <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <div className="coloumn ">
-                <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="row">
-                    <div className="col-1">
-                      <img
-                        className="ftr-content-data1-ic2"
-                        src={AddressIcon}
-                        alt="addr"
-                      />
-                    </div>
-                    <div className="col-11">
-                      <div className="ftr-content-data1">
-                        125 , Shahpur Jat, Siri Fort New Delhi- 110049
+              <div className="container">
+                <div className="coloumn ">
+                  <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
+                    <div className="row">
+                      <div className="col-1">
+                        <img
+                          className="ftr-content-data1-ic2"
+                          src={AddressIcon}
+                          alt="addr"
+                        />
+                      </div>
+                      <div className="col-11">
+                        <div className="ftr-content-data1">
+                          125 , Shahpur Jat, Siri Fort New Delhi- 110049
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="row">
-                    <div className="col-1">
-                      <img
-                        className="ftr-content-data1-ic2"
-                        src={ContactUsIcon}
-                        alt="ph"
-                      />
-                    </div>
-                    <div className="col-11">
-                      <div className="ftr-content-data1">+91-9266677335</div>
+                  <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
+                    <div className="row">
+                      <div className="col-1">
+                        <img
+                          className="ftr-content-data1-ic2"
+                          src={ContactUsIcon}
+                          alt="ph"
+                        />
+                      </div>
+                      <div className="col-11">
+                        <div className="ftr-content-data1">+91-9266677335</div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
-                  <div className="row">
-                    <div className="col-1">
-                      <img
-                        className="ftr-content-data1-ic3"
-                        src={EmailIcon}
-                        alt="email"
-                      />
-                    </div>
-                    <div className="col-11">
-                      <div className="ftr-content-data1">
-                        info@eckovation.com
+                  <div className=" col-lg-12 col-md-12 col-sm-6 col-xs-6 px-0">
+                    <div className="row">
+                      <div className="col-1">
+                        <img
+                          className="ftr-content-data1-ic3"
+                          src={EmailIcon}
+                          alt="email"
+                        />
+                      </div>
+                      <div className="col-11">
+                        <div className="ftr-content-data1">
+                          info@eckovation.com
+                        </div>
                       </div>
                     </div>
                   </div>
