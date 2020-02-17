@@ -84,6 +84,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+          <div className="nvbr-sm-bg"></div>
         </div>
       </div>
     </nav>

@@ -15,6 +15,7 @@ const Gallery = () => {
   const data2 = [Img2, Img3, Img4, Img5, Img6, Img7, Img1];
 
   const changeActive = pos => {
+    setTimeout(() => {}, 3000);
     if (pos >= data.length - 2) {
       setActive(0);
       if (moveData === "glry-sliderBTN-right-1") {
