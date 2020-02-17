@@ -7,7 +7,9 @@
   color: $primary-text-color;
 }
 
+html,
 body {
+  overflow-x: hidden;
   font-family: $primary-font;
   font-size: 1rem;
   font-weight: normal;
