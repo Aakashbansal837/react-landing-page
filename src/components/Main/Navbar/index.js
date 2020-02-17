@@ -48,7 +48,7 @@ const Navbar = () => {
                 <NbCollapse className="nvbr-sm-cl" />
               </span>
             </div>
-            <div className="col-10">
+            <div className="col-8">
               <center>
                 <a href="/home">
                   <Logo className="nvbr-logo" />
