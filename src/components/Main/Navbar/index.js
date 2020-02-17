@@ -61,6 +61,15 @@ const Navbar = () => {
         </div>
       </div>
       <div className="d-sm-block d-md-none">
+        <div className={fade ? " nvbr-sm-slider" : "nvbr-sm-slider-2"}>
+          <div
+            className="nvbr-sm-bg"
+            onClick={() => {
+              setActive(false);
+              setFade(false);
+            }}
+          ></div>
+        </div>
         <div className={active ? " nvbr-sm-active" : "nvbr-sm-non-active"}>
           <div className="nvbr-sm-data">
             <ul className="nvbr-sm-menu">
@@ -86,9 +95,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div className={fade ? " nvbr-sm-slider" : "nvbr-sm-slider-2"}>
-          <div className="nvbr-sm-bg"></div>
         </div>
       </div>
     </nav>

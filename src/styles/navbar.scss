@@ -173,6 +173,7 @@
 
 @keyframes navbar-fade-1 {
   0% {
+    display: block;
     opacity: 0;
   }
   100% {
@@ -185,6 +186,7 @@
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 
