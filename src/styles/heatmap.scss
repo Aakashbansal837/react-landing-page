@@ -21,6 +21,7 @@
   }
 
   &-data {
+    margin-top: 2rem;
     @include max-ht-wd($ht: 33.81rem, $wd: 29rem);
 
     &-box {
