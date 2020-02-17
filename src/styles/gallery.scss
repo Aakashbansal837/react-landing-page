@@ -27,7 +27,7 @@
       left: 0;
       z-index: -20;
       overflow: hidden;
-      min-height: 25rem;
+      // min-height: 25rem;
     }
 
     &-slide {
@@ -74,21 +74,21 @@
 }
 
 .glry {
-  &-moveData {
+  &-sliderBTN {
     &-left {
       &-1 {
-        animation: slide-left-1 2.5s liner backwards;
+        animation: slide-left-1 2.5s liner both;
       }
       &-2 {
-        animation: slide-left-2 2.5s liner backwards;
+        animation: slide-left-2 2.5s liner both;
       }
     }
     &-right {
       &-1 {
-        animation: slide-right-1 0.5s liner backwards;
+        animation: slide-right-1 0.5s liner both;
       }
       &-2 {
-        animation: slide-right-2 0.5s liner backwards;
+        animation: slide-right-2 0.5s liner both;
       }
     }
   }
@@ -96,19 +96,19 @@
 
 @keyframes slide-left-1 {
   0% {
-    left: 0;
+    transform: translateX(0);
   }
   100% {
-    left: -111rem;
+    transform: translateX(-100px);
   }
 }
 
 @keyframes slide-left-2 {
   0% {
-    left: 0;
+    transform: translateX(0);
   }
   100% {
-    left: -111rem;
+    transform: translateX(-100px);
   }
 }
 

@@ -102,8 +102,9 @@
         height: max-content;
         position: relative;
         margin-top: 4rem;
+        padding: 0px !important;
         &-vd {
-          @include max-ht-wd($ht: 18rem, $wd: 27.7975rem);
+          @include max-ht-wd($ht: 16rem, $wd: 20.7975rem);
           z-index: 2;
           left: 1rem;
           position: absolute;
@@ -119,7 +120,7 @@
           &-wall {
             @include max-ht-wd($ht: 15.8575rem, $wd: 18.569375rem);
             position: absolute;
-            left: -1.5rem;
+            left: -2.5rem;
 
             &-img {
               @include max-ht-wd($ht: 15.8575rem, $wd: 18.569375rem);
@@ -129,7 +130,7 @@
             @include max-ht-wd($ht: 6rem, $wd: 6rem);
             position: absolute;
             z-index: 1;
-            left: 12rem;
+            left: 10rem;
             &-img {
               @include max-ht-wd($ht: 6rem, $wd: 6rem);
             }

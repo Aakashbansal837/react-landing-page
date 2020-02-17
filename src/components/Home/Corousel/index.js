@@ -23,16 +23,16 @@ const Corousel = () => {
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img className="d-block w-100" src={crsl1} alt="First slide" />
+          <img className="d-flex " src={crsl1} alt="First slide" />
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src={crsl2} alt="Second slide" />
+          <img className="d-flex " src={crsl2} alt="Second slide" />
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src={crsl3} alt="Third slide" />
+          <img className="d-flex " src={crsl3} alt="Third slide" />
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src={crsl4} alt="fourth slide" />
+          <img className="d-flex " src={crsl4} alt="fourth slide" />
         </div>
       </div>
       <a

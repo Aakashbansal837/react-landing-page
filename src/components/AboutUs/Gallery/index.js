@@ -1,11 +1,11 @@
 import React from "react";
-import MainImg from "../../../images/AboutUS/1.png";
+import MainImg from "../../../images/AboutUS/1.jpg";
 
 const Data = () => {
   return (
     <div className="abs">
       <div className="abs-main">
-        <img className="abs-main-img d-block w-100" src={MainImg} alt="image" />
+        <img className="abs-main-img" src={MainImg} alt="image" />
       </div>
       <div className="abs-upper"></div>
     </div>

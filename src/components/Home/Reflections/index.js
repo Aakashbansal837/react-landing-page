@@ -144,8 +144,7 @@ const Reflections = () => {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-2"></div>
-                  <div className="col-4">
+                  <div className="col-5">
                     <div className="d-sm-block d-md-none ">
                       <div
                         className="rfl-slider-move-left"
@@ -155,7 +154,7 @@ const Reflections = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-4">
+                  <div className="col-6">
                     <div className="d-sm-block d-md-none">
                       <div
                         className="rfl-slider-move-right"

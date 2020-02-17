@@ -9,7 +9,6 @@ const About = () => {
       <center className="abt-header">About Gyanodaya</center>
       <div className="container">
         <div className="row abt-dt">
-          <div className="abt-dt"></div>
           <div className="abt-dt-vdo col-md-6 col-lg-6 col-sm-12 col-xs-12">
             <div
               className="abt-dt-vdo-vd"

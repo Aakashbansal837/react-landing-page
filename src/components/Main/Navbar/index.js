@@ -57,32 +57,33 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <img className="" />
       </div>
-      <div className={active ? " nvbr-sm-active" : "nvbr-sm-non-active"}>
-        <div className="nvbr-sm-data">
-          <ul className="nvbr-sm-menu">
-            <li>
-              <a href="/home" className="nvbr-sm-link">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/aboutUs" className="nvbr-sm-link">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nvbr-sm-link">
-                Blogs
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nvbr-sm-link">
-                Log In
-              </a>
-            </li>
-          </ul>
+      <div className="d-sm-block d-md-none">
+        <div className={active ? " nvbr-sm-active" : "nvbr-sm-non-active"}>
+          <div className="nvbr-sm-data">
+            <ul className="nvbr-sm-menu">
+              <li>
+                <a href="/home" className="nvbr-sm-link">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/aboutUs" className="nvbr-sm-link">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="nvbr-sm-link">
+                  Blogs
+                </a>
+              </li>
+              <li>
+                <a href="#" className="nvbr-sm-link">
+                  Log In
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

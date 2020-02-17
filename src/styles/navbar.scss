@@ -50,8 +50,9 @@
   padding-top: 1rem;
 
   &-cl {
-    @include max-ht-wd($ht: 2rem, $wd: 3.75rem);
-    margin-top: 0.5rem;
+    height: 1.3rem;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   &-active {
@@ -64,14 +65,11 @@
   }
 
   &-data {
-    &:before {
-      opacity: 0;
-    }
     left: 0rem;
     height: 100vh;
     background-color: $color-white;
     position: absolute;
-    width: 20rem;
+    width: 75%;
     background-color: $color-blue;
     clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
     z-index: 100;
@@ -161,11 +159,11 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
