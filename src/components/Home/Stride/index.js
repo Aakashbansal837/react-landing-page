@@ -33,7 +33,7 @@ const Stride = () => {
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div
               className="container"
-              data-aos="fade-up-right"
+              data-aos="fade-up"
               data-aos-duration="1000"
             >
               <div className="stride-card">
@@ -77,7 +77,7 @@ const Stride = () => {
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div
               className="container"
-              data-aos="fade-up-left"
+              data-aos="fade-up"
               data-aos-duration="1000"
             >
               <div className="stride-card">
