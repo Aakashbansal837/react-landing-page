@@ -233,10 +233,11 @@
 
       &-data {
         min-height: 17rem;
-        @include max-ht-wd($ht: 37rem, $wd: 36rem);
+        @include max-ht-wd($ht: 47rem, $wd: 36rem);
         width: 22rem;
 
         &-dt {
+          margin-bottom: 2rem;
           padding: 0.5rem;
 
           p {
@@ -245,7 +246,7 @@
         }
 
         &-img {
-          margin: 1rem 0.3rem 0rem 2rem;
+          margin: 2rem 2rem 0 2rem;
           height: 16rem;
           width: 16rem;
           border-radius: 0.5rem;
@@ -253,6 +254,7 @@
 
         &-txt {
           &-head {
+            margin-top: 0rem !important;
             padding: 0 1rem;
           }
           &-sub {
@@ -268,18 +270,18 @@
         &-left {
           float: right;
           margin-top: 3rem;
-          height: 4rem;
-          width: 5rem;
+          height: 3rem;
+          width: 4rem;
         }
 
         &-right {
           margin-top: 3rem;
-          height: 4rem;
-          width: 5rem;
+          height: 3rem;
+          width: 4rem;
         }
 
         &-triangle {
-          font-size: 2rem;
+          font-size: 1.3rem;
         }
       }
     }
@@ -321,11 +323,15 @@
 
       &-data {
         min-height: 17rem;
-        @include max-ht-wd($ht: 57rem, $wd: 36rem);
+        @include max-ht-wd($ht: 77rem, $wd: 36rem);
         width: 28rem;
 
+        &-dt {
+          margin-bottom: 3rem;
+        }
+
         &-img {
-          margin: 3rem 4rem 0rem 4rem;
+          margin: 4rem 4rem 0rem 4rem;
           height: 19rem;
           width: 19rem;
         }
@@ -346,19 +352,19 @@
       &-move {
         &-left {
           margin-top: 3rem;
-          height: 4rem;
-          width: 5rem;
+          height: 3.5rem;
+          width: 4.5rem;
           float: right;
         }
 
         &-right {
           margin-top: 3rem;
-          height: 4rem;
-          width: 5rem;
+          height: 3.5rem;
+          width: 4.5rem;
         }
 
         &-triangle {
-          font-size: 2rem;
+          font-size: 1.4rem;
         }
       }
     }

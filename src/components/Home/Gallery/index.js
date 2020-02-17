@@ -6,16 +6,45 @@ import Img4 from "../../../images/gallery/4.png";
 import Img5 from "../../../images/gallery/5.png";
 import Img6 from "../../../images/gallery/6.png";
 import Img7 from "../../../images/gallery/7.png";
+import Img8 from "../../../images/gallery/8.png";
+import Img9 from "../../../images/gallery/9.png";
+import Img10 from "../../../images/gallery/10.png";
+import Img11 from "../../../images/gallery/11.png";
 
 const Gallery = () => {
   const [active, setActive] = React.useState(0);
   const [moveData, setMoveData] = React.useState("glry-sliderBTN-left-1");
+  const [left, setLeft] = React.useState("");
+  const [right, setRight] = React.useState("");
 
-  const data = [Img1, Img2, Img3, Img4, Img5, Img6, Img7];
-  const data2 = [Img2, Img3, Img4, Img5, Img6, Img7, Img1];
+  const data = [
+    Img1,
+    Img2,
+    Img3,
+    Img4,
+    Img5,
+    Img6,
+    Img7,
+    Img8,
+    Img9,
+    Img10,
+    Img11
+  ];
+  const data2 = [
+    Img11,
+    Img10,
+    Img9,
+    Img8,
+    Img7,
+    Img6,
+    Img5,
+    Img4,
+    Img3,
+    Img2,
+    Img1
+  ];
 
   const changeActive = pos => {
-    setTimeout(() => {}, 3000);
     if (pos >= data.length - 2) {
       setActive(0);
       if (moveData === "glry-sliderBTN-right-1") {
