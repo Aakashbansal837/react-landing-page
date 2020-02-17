@@ -17,11 +17,11 @@
   }
 
   &-map {
-    @include max-ht-wd($ht: 551.53px, $wd: 326.75);
+    @include max-ht-wd($ht: 34.47rem, $wd: 20.43rem);
   }
 
   &-data {
-    @include max-ht-wd($ht: 541px, $wd: 470px);
+    @include max-ht-wd($ht: 33.81rem, $wd: 29rem);
 
     &-box {
       box-shadow: 0 2px 4px 0 rgba(33, 42, 57, 0.15);

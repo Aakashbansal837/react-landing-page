@@ -11,25 +11,22 @@ import News from "./News";
 import Gallery from "./Gallery";
 import DownloadOptions from "../Main/DownloadOptions";
 import Footer from "../Main/Footer";
-import Lazyload from "react-lazyload";
 
 const Home = () => {
   return (
     <div>
-      <Lazyload>
-        <Navbar />
-        <Corousel />
-        <Partners />
-        <About />
-        <Heatmap />
-        <Stride />
-        <Reports />
-        <Reflections />
-        <News />
-        <Gallery />
-        <DownloadOptions />
-        <Footer />
-      </Lazyload>
+      <Navbar />
+      <Corousel />
+      <Partners />
+      <About />
+      <Heatmap />
+      <Stride />
+      <Reports />
+      <Reflections />
+      <News />
+      <Gallery />
+      <DownloadOptions />
+      <Footer />
     </div>
   );
 };
