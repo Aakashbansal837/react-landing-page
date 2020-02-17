@@ -13,9 +13,9 @@ import Img11 from "../../../images/gallery/11.png";
 
 const Gallery = () => {
   const [active, setActive] = React.useState(0);
-  const [moveData, setMoveData] = React.useState("glry-sliderBTN-left-1");
-  const [left, setLeft] = React.useState("");
-  const [right, setRight] = React.useState("");
+  const [moveData, setMoveData] = React.useState("glry-sliderBTN-right-1");
+  const [left, setLeft] = React.useState("glry-sliderBTN-fade-2");
+  const [right, setRight] = React.useState("glry-sliderBTN-fade-2");
 
   const data = [
     Img1,
@@ -45,6 +45,7 @@ const Gallery = () => {
   ];
 
   const changeActive = pos => {
+    // moving right (end point)
     if (pos >= data.length - 2) {
       setActive(0);
       if (moveData === "glry-sliderBTN-right-1") {
@@ -52,7 +53,9 @@ const Gallery = () => {
       } else {
         setMoveData("glry-sliderBTN-right-1");
       }
-    } else if (pos <= 0) {
+    }
+    //moving left (end point)
+    else if (pos <= 0) {
       setActive(data.length - 3);
       if (moveData === "glry-sliderBTN-left-1") {
         setMoveData("glry-sliderBTN-left-2");
@@ -60,13 +63,17 @@ const Gallery = () => {
         setMoveData("glry-sliderBTN-left-1");
       }
     } else {
+      //moving right (center)
+
       if (pos > active) {
         if (moveData === "glry-sliderBTN-right-1") {
           setMoveData("glry-sliderBTN-right-2");
         } else {
           setMoveData("glry-sliderBTN-right-1");
         }
-      } else {
+      }
+      // moving left center
+      else {
         if (moveData === "glry-sliderBTN-left-1") {
           setMoveData("glry-sliderBTN-left-2");
         } else {
@@ -77,6 +84,31 @@ const Gallery = () => {
       setActive(pos);
     }
   };
+
+  const LeftButtonClick = () => {
+    {
+      changeActive(active - 1);
+
+      if (left == "glry-sliderBTN-fade-2") {
+        setLeft("glry-sliderBTN-fade-1");
+      } else if (left == "glry-sliderBTN-fade-1") {
+        setLeft("glry-sliderBTN-fade-2");
+      }
+    }
+  };
+
+  const RightButtonClick = () => {
+    {
+      changeActive(active + 1);
+
+      if (right == "glry-sliderBTN-fade-2") {
+        setRight("glry-sliderBTN-fade-1");
+      } else if (right == "glry-sliderBTN-fade-1") {
+        setRight("glry-sliderBTN-fade-2");
+      }
+    }
+  };
+
   return (
     <div className="gallery">
       <center className="gallery-header">Gallery</center>
@@ -89,7 +121,7 @@ const Gallery = () => {
                   <div className="d-none d-md-block">
                     <div
                       className="gallery-data-moveData-left"
-                      onClick={() => changeActive(active - 1)}
+                      onClick={() => LeftButtonClick()}
                     >
                       <span className="gallery-data-moveData-triangle"></span>
                     </div>
@@ -121,6 +153,7 @@ const Gallery = () => {
                           </div>
                         </div>
                       </div>
+
                       <div className="row">
                         <div className="d-none d-sm-block col-sm-6 col-md-6 col-lg-4">
                           <div className={moveData}>
@@ -151,7 +184,7 @@ const Gallery = () => {
                   <div className="d-none d-md-block">
                     <div
                       className="gallery-data-moveData-right"
-                      onClick={() => changeActive(active + 1)}
+                      onClick={() => RightButtonClick()}
                     >
                       <span className="gallery-data-moveData-triangle"></span>
                     </div>
