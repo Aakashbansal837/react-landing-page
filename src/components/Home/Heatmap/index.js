@@ -76,7 +76,7 @@ class Heatmap extends Component {
                                 <div className="col-6 px-0">
                                   <div
                                     className="htmp-data-box"
-                                    data-aos="zoom-in-right"
+                                    data-aos="zoom-in"
                                     data-aos-duration="1000"
                                   >
                                     <center>
@@ -93,7 +93,7 @@ class Heatmap extends Component {
                                 <div className="col-6 px-0">
                                   <div
                                     className="htmp-data-box"
-                                    data-aos="zoom-in-left"
+                                    data-aos="zoom-in"
                                     data-aos-duration="1000"
                                   >
                                     <center>
@@ -112,7 +112,7 @@ class Heatmap extends Component {
                                 <div className="col-6 px-0">
                                   <div
                                     className="htmp-data-box"
-                                    data-aos="zoom-in-right"
+                                    data-aos="zoom-out"
                                     data-aos-duration="1000"
                                   >
                                     <center>
@@ -129,7 +129,7 @@ class Heatmap extends Component {
                                 <div className="col-6 px-0">
                                   <div
                                     className="htmp-data-box"
-                                    data-aos="zoom-in-left"
+                                    data-aos="zoom-out"
                                     data-aos-duration="1000"
                                   >
                                     <center>

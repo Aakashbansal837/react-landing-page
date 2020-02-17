@@ -12,7 +12,7 @@ const About = () => {
           <div className="abt-dt-vdo col-md-6 col-lg-6 col-sm-12 col-xs-12">
             <div
               className="abt-dt-vdo-vd"
-              data-aos="zoom-in-right"
+              data-aos="zoom-in-down"
               data-aos-duration="700"
             >
               <iframe
@@ -31,7 +31,7 @@ const About = () => {
           </div>
           <div
             className="abt-dt-txt col-md-6 col-lg-6 col-sm-12 col-xs-12"
-            data-aos="fade-up-left"
+            data-aos="zoom-in-up"
             data-aos-duration="1000"
           >
             <div>
