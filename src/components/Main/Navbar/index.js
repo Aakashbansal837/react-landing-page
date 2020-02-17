@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from "../../../images/logo.svg";
 
 const Navbar = () => {
   const [active, setActive] = React.useState(false);
+  const [fade, setFade] = React.useState(false);
   return (
     <nav className="nvbr">
       <div className="d-none d-md-block">
@@ -43,6 +44,7 @@ const Navbar = () => {
               <span
                 onClick={() => {
                   setActive(!active);
+                  setFade(!fade);
                 }}
               >
                 <NbCollapse className="nvbr-sm-cl" />
@@ -84,6 +86,8 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div className={fade ? " nvbr-sm-slider" : "nvbr-sm-slider-2"}>
           <div className="nvbr-sm-bg"></div>
         </div>
       </div>

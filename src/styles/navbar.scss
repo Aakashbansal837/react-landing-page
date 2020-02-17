@@ -65,6 +65,13 @@
     animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
+  &-slider {
+    animation: navbar-fade-1 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  &-slider-2 {
+    animation: navbar-fade-2 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
   &-data {
     left: 0rem;
     height: 100vh;
@@ -160,6 +167,23 @@
   100% {
     transform: translateX(-20rem);
     display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes navbar-fade-1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes navbar-fade-2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
