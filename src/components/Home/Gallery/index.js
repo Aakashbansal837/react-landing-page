@@ -171,14 +171,14 @@ const Gallery = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="d-none d-sm-block col-sm-6 col-md-6 col-lg-4">
+                        <div className="d-none d-lg-block col-md-6 col-lg-4">
                           <div className={moveData}>
                             <div className="gallery-data-slide">
                               <img src={data2[active + 1]} />
                             </div>
                           </div>
                         </div>
-                        <div className="d-none d-lg-block col-md-6 col-lg-4">
+                        <div className="d-none d-sm-block col-sm-6  col-md-6 col-lg-4">
                           <div className={moveData + " " + left}>
                             <div className="gallery-data-slide">
                               <img src={data2[active + 2]} />

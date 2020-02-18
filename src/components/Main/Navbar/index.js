@@ -30,7 +30,10 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="btn-main">
+              <a
+                href="https://gyanodaya.eckovation.com/static/#/login"
+                className="btn-main"
+              >
                 Log In
               </a>
             </li>
@@ -89,7 +92,10 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="nvbr-sm-link">
+                <a
+                  href="https://gyanodaya.eckovation.com/static/#/login"
+                  className="nvbr-sm-link"
+                >
                   Log In
                 </a>
               </li>
