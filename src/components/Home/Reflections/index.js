@@ -2,8 +2,8 @@ import React from "react";
 import { ReflectionsText } from "../../../constants";
 import RightArrow from "../../../images/icons/right-arrow.svg";
 import image1 from "../../../images/reflections/1.png";
-import image2 from "../../../images/reflections/2.png";
-import image3 from "../../../images/reflections/3.png";
+import image2 from "../../../images/reflections/2.jpg";
+import image3 from "../../../images/reflections/3.jpg";
 
 const Reflections = () => {
   const data = [
@@ -16,17 +16,17 @@ const Reflections = () => {
     },
     {
       image: image2,
-      name: "Lion king",
-      des: "King of Forests",
+      name: "Dr. Priti G. Adani",
+      des: "Chairperson, Adani Foundation",
       text:
-        "As a cub, Simba is forced to leave the Pride Lands after his father Mufasa is murdered by his wicked uncle, Scar. Years later, he returns as a young lion to reclaim his throne"
+        "The initiative has brought about major changes in the educational scenario of Godda district. The Gyanodaya program has been widely acclaimed by the State Education Department, the Government of Jharkhand and the Academic Community elsewhere. I extend my most heartfelt appreciation to every team member, who has been tirelessly working to make this project benchmarking."
     },
     {
       image: image3,
-      name: "Mr. Owl",
-      des: "Night Watcher",
+      name: "Ritesh Singh",
+      des: "CEO & Co-Founder, Eckovation",
       text:
-        "Owls are birds from the order Strigiformes, which includes about 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance, a large, broad head, binocular vision, binaural hearing, sharp talons, and feathers adapted for silent flight."
+        "Gyanodaya is an attempt to make quality education affordable by using technology. It can be considered as one of the example of Digital India. Gyanodaya is spreading the light of knowledge in the lives of the millions."
     }
   ];
   const [active, setActive] = React.useState(0);

@@ -1,15 +1,17 @@
 import React from "react";
-import Img1 from "../../../images/gallery/1.png";
-import Img2 from "../../../images/gallery/2.png";
-import Img3 from "../../../images/gallery/3.png";
-import Img4 from "../../../images/gallery/4.png";
-import Img5 from "../../../images/gallery/5.png";
-import Img6 from "../../../images/gallery/6.png";
-import Img7 from "../../../images/gallery/7.png";
-import Img8 from "../../../images/gallery/8.png";
-import Img9 from "../../../images/gallery/9.png";
-import Img10 from "../../../images/gallery/10.png";
-import Img11 from "../../../images/gallery/11.png";
+import Img1 from "../../../images/gallery/1.jpg";
+import Img2 from "../../../images/gallery/2.jpg";
+import Img3 from "../../../images/gallery/3.jpg";
+import Img4 from "../../../images/gallery/4.jpg";
+import Img5 from "../../../images/gallery/5.jpg";
+import Img6 from "../../../images/gallery/6.jpg";
+import Img7 from "../../../images/gallery/7.jpg";
+import Img8 from "../../../images/gallery/8.jpg";
+import Img9 from "../../../images/gallery/9.jpg";
+import Img10 from "../../../images/gallery/10.jpg";
+import Img11 from "../../../images/gallery/11.jpg";
+import Img12 from "../../../images/gallery/12.jpg";
+import Img13 from "../../../images/gallery/13.jpg";
 
 const Gallery = () => {
   const [active, setActive] = React.useState(0);
@@ -28,9 +30,13 @@ const Gallery = () => {
     Img8,
     Img9,
     Img10,
-    Img11
+    Img11,
+    Img12,
+    Img13
   ];
   const data2 = [
+    Img13,
+    Img12,
     Img11,
     Img10,
     Img9,
