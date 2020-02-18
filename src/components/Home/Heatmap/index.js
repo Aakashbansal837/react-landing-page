@@ -38,7 +38,8 @@ class Heatmap extends Component {
             <div className="col">
               <div className="htmp-mp">
                 <div className="row">
-                  <div className="col-md-6 col-lg-6 col-sm-10 col-xs-12">
+                  <div className="col-md-1 col-lg-1 d-none d-md-block"></div>
+                  <div className="col-md-5 col-lg-5 col-sm-12 col-xs-12">
                     <div
                       className="htmp-map"
                       data-aos="zoom-out"
@@ -51,7 +52,7 @@ class Heatmap extends Component {
                       </center>
                     </div>
                   </div>
-                  <div className="col-md-6 col-lg-6 col-sm-10 col-xs-12">
+                  <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                     <center>
                       <div className="container-fluid">
                         <div className="htmp-data">
