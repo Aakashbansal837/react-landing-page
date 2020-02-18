@@ -16,10 +16,12 @@ const About = () => {
               data-aos-duration="700"
             >
               <iframe
-                src="https://www.youtube.com/embed/w2Ov5jzm3j8"
-                frameBorder="0"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/acVPq4P0aHU"
+                frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+                allowfullscreen
               ></iframe>
             </div>
             <div className="abt-dt-vdo-bg-wall">

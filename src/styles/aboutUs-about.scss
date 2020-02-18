@@ -51,7 +51,9 @@
     &-container {
       padding: 0 1rem;
     }
+
     &-main {
+      margin-top: 0rem;
       &-img {
         @include max-ht-wd($ht: 24rem, $wd: 32.56rem);
         margin-bottom: 15rem;
@@ -61,12 +63,13 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (min-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   .abus {
     &-container {
       padding: 0 2rem;
     }
     &-main {
+      margin-top: 0rem;
       &-img {
         @include max-ht-wd($ht: 18rem, $wd: 32.56rem);
         margin-bottom: 10rem;
