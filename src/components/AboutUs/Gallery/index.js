@@ -7,7 +7,14 @@ const Data = () => {
       <div className="abs-main">
         <img className="abs-main-img" src={MainImg} alt="image" />
       </div>
-      <div className="abs-upper"></div>
+      <div className="abs-upper">
+        <div className="container">
+          <div className="row">
+            <div className="abs-video"></div>
+          </div>
+        </div>
+      </div>
+      <div className="abs-bg"></div>
     </div>
   );
 };

@@ -13,11 +13,13 @@ const DownloadOptions = () => {
                 Download Teacher App!
               </center>
               <center>
-                <img
-                  className="dwnld-main-download"
-                  src={DownloadButton}
-                  alt="download button"
-                />
+                <a href="https://play.google.com/store/apps/details?id=com.eckovation.gyanodaya.teacher">
+                  <img
+                    className="dwnld-main-download"
+                    src={DownloadButton}
+                    alt="download button"
+                  />
+                </a>
               </center>
             </div>
             <div className="hidden-md hidden-lg hidden-sm hidden-xs">
@@ -28,11 +30,13 @@ const DownloadOptions = () => {
                 Download Student App!
               </center>
               <center>
-                <img
-                  className="dwnld-main-download"
-                  src={DownloadButton}
-                  alt="download button"
-                />
+                <a href="https://play.google.com/store/apps/details?id=com.eckovation">
+                  <img
+                    className="dwnld-main-download"
+                    src={DownloadButton}
+                    alt="download button"
+                  />
+                </a>
               </center>
             </div>
           </div>

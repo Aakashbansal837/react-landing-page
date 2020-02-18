@@ -14,8 +14,8 @@ import Img11 from "../../../images/gallery/11.png";
 const Gallery = () => {
   const [active, setActive] = React.useState(0);
   const [moveData, setMoveData] = React.useState("glry-sliderBTN-right-1");
-  const [left, setLeft] = React.useState("glry-sliderBTN-fade-2");
-  const [right, setRight] = React.useState("glry-sliderBTN-fade-2");
+  const [left, setLeft] = React.useState("");
+  const [right, setRight] = React.useState("");
 
   const data = [
     Img1,
@@ -86,27 +86,36 @@ const Gallery = () => {
   };
 
   const LeftButtonClick = () => {
-    {
-      changeActive(active - 1);
-
-      if (left == "glry-sliderBTN-fade-2") {
-        setLeft("glry-sliderBTN-fade-1");
-      } else if (left == "glry-sliderBTN-fade-1") {
-        setLeft("glry-sliderBTN-fade-2");
-      }
+    if (left == "") {
+      setLeft("glry-sliderBTN-fade-1");
     }
+    if (left == "glry-sliderBTN-fade-2") {
+      setLeft("glry-sliderBTN-fade-1");
+    } else if (left == "glry-sliderBTN-fade-1") {
+      setLeft("glry-sliderBTN-fade-2");
+    }
+
+    setTimeout(() => {
+      setLeft("");
+      setRight("");
+      changeActive(active - 1);
+    }, 500);
   };
 
   const RightButtonClick = () => {
-    {
-      changeActive(active + 1);
-
-      if (right == "glry-sliderBTN-fade-2") {
-        setRight("glry-sliderBTN-fade-1");
-      } else if (right == "glry-sliderBTN-fade-1") {
-        setRight("glry-sliderBTN-fade-2");
-      }
+    if (right == "") {
+      setRight("glry-sliderBTN-fade-1");
     }
+    if (right == "glry-sliderBTN-fade-2") {
+      setRight("glry-sliderBTN-fade-1");
+    } else if (right == "glry-sliderBTN-fade-1") {
+      setRight("glry-sliderBTN-fade-2");
+    }
+    setTimeout(() => {
+      setLeft("");
+      setRight("");
+      changeActive(active + 1);
+    }, 500);
   };
 
   return (
@@ -132,7 +141,7 @@ const Gallery = () => {
                     <div className="container">
                       <div className="row">
                         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                          <div className={moveData}>
+                          <div className={moveData + " " + right}>
                             <div className="gallery-data-slide">
                               <img src={data[active]} />
                             </div>
@@ -146,7 +155,7 @@ const Gallery = () => {
                           </div>
                         </div>
                         <div className="d-none d-sm-block col-sm-6 col-md-6 col-lg-4">
-                          <div className={moveData}>
+                          <div className={moveData + " " + left}>
                             <div className="gallery-data-slide">
                               <img src={data[active + 2]} />
                             </div>
@@ -156,7 +165,7 @@ const Gallery = () => {
 
                       <div className="row">
                         <div className="d-none d-sm-block col-sm-6 col-md-6 col-lg-4">
-                          <div className={moveData}>
+                          <div className={moveData + " " + right}>
                             <div className="gallery-data-slide">
                               <img src={data2[active]} />
                             </div>
@@ -170,7 +179,7 @@ const Gallery = () => {
                           </div>
                         </div>
                         <div className="d-none d-lg-block col-md-6 col-lg-4">
-                          <div className={moveData}>
+                          <div className={moveData + " " + left}>
                             <div className="gallery-data-slide">
                               <img src={data2[active + 2]} />
                             </div>

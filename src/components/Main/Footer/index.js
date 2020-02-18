@@ -13,14 +13,14 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <Logo className="ftr-main-logo" />
-            <div className="ftr-main-btn">
+            {/* <div className="ftr-main-btn">
               <div className="ftr-main-btn-button">
                 <a href="#" className="footer-button">
                   Dashboard
                   <div className="transition"></div>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -197,7 +197,7 @@ const Footer = () => {
                       </div>
                       <div className="col-11">
                         <div className="ftr-content-data1">
-                          125 , Shahpur Jat, Siri Fort New Delhi- 110049
+                          Godda, Jharkhand
                         </div>
                       </div>
                     </div>
@@ -246,14 +246,14 @@ const Footer = () => {
       <div className="container">
         <div className="ftr-foot">
           <div className="row">
-            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12">
               <center className="ftr-foot-cp">
                 <i className="fa fa-copyright" aria-hidden="true" />
                 2020 Eckovation Solutions Private Limited
               </center>
             </div>
 
-            <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            {/* <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <center className="ftr-foot-icons">
                 <div className="row">
                   <div className="col-1"></div>
@@ -284,10 +284,10 @@ const Footer = () => {
                   <div className="col-1"></div>
                 </div>
               </center>
-            </div>
+            </div> */}
 
-            <div className="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
-            <center className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            {/* <div className="col-lg-1 col-md-1 d-none d-md-block"></div> */}
+            <center className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <span className="footer-foot"> Terms of Service</span>
               <span className="footer-divider"> | </span>
               <span className="footer-foot"> Site Map </span>
