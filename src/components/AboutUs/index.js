@@ -5,19 +5,16 @@ import About from "./About";
 import Journey from "./Journey";
 import DownloadOptions from "../Main/DownloadOptions";
 import Footer from "../Main/Footer";
-import Lazyload from "react-lazyload";
 
 const AboutUs = () => {
   return (
     <div>
-      <Lazyload>
-        <Navbar />
-        <Gallery />
-        <About />
-        <Journey />
-        <DownloadOptions />
-        <Footer />
-      </Lazyload>
+      <Navbar />
+      <Gallery />
+      <About />
+      <Journey />
+      <DownloadOptions />
+      <Footer />
     </div>
   );
 };
