@@ -37,15 +37,13 @@ const Stride = () => {
               data-aos-duration="1000"
             >
               <div className="stride-card">
-                <img
-                  className="stride-card-img"
-                  src={Card1}
-                  alt="stride card 1"
-                />
+                <div className="stride-card-img-1"></div>
                 <div className="stride-card-dt">
                   <p className="stride-card-dt-head">{StrideCard1head}</p>
                   <p className="stride-card-dt-txt">{StrideCard1txt}</p>
-                  <a className="stride-card-dt-rm">
+                </div>
+                <div className="stride-card-dt-rm">
+                  <a>
                     {StrideReadMore} <img src={RightArrow} />
                   </a>
                 </div>
@@ -59,11 +57,7 @@ const Stride = () => {
               data-aos-duration="1000"
             >
               <div className="stride-card">
-                <img
-                  className="stride-card-img"
-                  src={Card2}
-                  alt="stride card 1"
-                />
+                <div className="stride-card-img-2"></div>
                 <div className="stride-card-dt">
                   <p className="stride-card-dt-head">{StrideCard2head}</p>
                   <p className="stride-card-dt-txt">{StrideCard2txt}</p>
@@ -81,11 +75,7 @@ const Stride = () => {
               data-aos-duration="1000"
             >
               <div className="stride-card">
-                <img
-                  className="stride-card-img"
-                  src={Card3}
-                  alt="stride card 1"
-                />
+                <div className="stride-card-img-3"></div>
                 <div className="stride-card-dt">
                   <p className="stride-card-dt-head">{StrideCard3head}</p>
                   <p className="stride-card-dt-txt">{StrideCard3txt}</p>

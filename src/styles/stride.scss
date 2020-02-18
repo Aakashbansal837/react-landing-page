@@ -17,8 +17,7 @@
   }
 
   &-card {
-    @include max-ht-wd($ht: 27.5625rem, $wd: 23.125rem);
-    height: 27.562rem;
+    height: 28.562rem;
     box-shadow: 0 2px 10px 0 rgba(33, 42, 57, 0.15);
     border-radius: 8px;
     margin-top: 1rem;
@@ -31,13 +30,36 @@
     }
 
     &-img {
-      @include max-ht-wd($ht: 11rem, $wd: 23.125rem);
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
+      &-1 {
+        height: 11rem;
+        background-image: url(../images/stride/1.png);
+        background-size: cover;
+        background-position: center top;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
+      &-2 {
+        height: 11rem;
+        background-image: url(../images/stride/2.png);
+        background-size: cover;
+        background-position: center top;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
+      &-3 {
+        height: 11rem;
+        background-image: url(../images/stride/1.png);
+        background-size: cover;
+        background-position: center top;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
     }
     &-dt {
+      height: 20rem;
       padding: 1rem;
       z-index: 2;
+      position: relative;
       &-head {
         @include Header-text-3();
         overflow: hidden;
@@ -56,8 +78,18 @@
         font-weight: $weight-mid;
         font-size: 1.125rem;
         margin-top: 1.5rem;
+        margin-right: 2rem;
         cursor: pointer;
+
         float: right;
+      }
+
+      &-blur {
+        position: absolute;
+        z-index: 3;
+        height: 100%;
+        width: 100%;
+        background-color: $color-blue;
       }
     }
 
