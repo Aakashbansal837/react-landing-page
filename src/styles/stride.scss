@@ -32,7 +32,7 @@
     &-img {
       &-1 {
         height: 11rem;
-        background-image: url(../images/stride/1.png);
+        background-image: url(https://beats.eckovation.com/wp-content/uploads/2019/11/Gyanodaya-CTB-Launch-1.jpg);
         background-size: cover;
         background-position: center top;
         border-top-left-radius: 0.5rem;
@@ -40,7 +40,7 @@
       }
       &-2 {
         height: 11rem;
-        background-image: url(../images/stride/2.png);
+        background-image: url(https://beats.eckovation.com/wp-content/uploads/2019/06/images.jpg);
         background-size: cover;
         background-position: center top;
         border-top-left-radius: 0.5rem;
@@ -48,9 +48,9 @@
       }
       &-3 {
         height: 11rem;
-        background-image: url(../images/stride/1.png);
+        background-image: url(https://beats.eckovation.com/wp-content/uploads/2018/09/Gyanodaya-blog-01-752x440.png);
         background-size: cover;
-        background-position: center top;
+        background-position: left bottom;
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
       }
@@ -80,6 +80,11 @@
         margin-top: 1.5rem;
         margin-right: 2rem;
         cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
 
         float: right;
       }
@@ -94,11 +99,14 @@
     }
 
     &-bg {
-      @include max-ht-wd($ht: 27.5625rem, $wd: 23.125rem);
+      background-image: url(../images/background/vdo-bg-wall.svg);
+      background-size: cover;
+      height: 20rem;
+      width: 80%;
       position: absolute;
       z-index: -1;
       margin-left: -2rem;
-      // margin-top: -16rem;
+      margin-top: -16rem;
       animation: StrideBackground 4s infinite;
     }
   }
@@ -110,13 +118,13 @@
 
 @keyframes StrideBackground {
   0% {
-    margin-top: 10rem;
+    margin-top: -18rem;
   }
   50% {
-    margin-top: 14rem;
+    margin-top: -24rem;
   }
   100% {
-    margin-top: 10rem;
+    margin-top: -18rem;
   }
 }
 
