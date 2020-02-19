@@ -24,6 +24,7 @@
     @include max-ht-wd($ht: 33.81rem, $wd: 29rem);
 
     &-box {
+      background: $color-white;
       box-shadow: 0 2px 4px 0 rgba(33, 42, 57, 0.15);
       padding: 4rem 0px;
     }
@@ -42,10 +43,41 @@
       }
     }
   }
+
+  &-bg {
+    background-image: url(../images/background/vdo-bg-wall.svg);
+    background-size: cover;
+    height: 20rem;
+    width: 20rem;
+    z-index: -1;
+    right: 1.5rem;
+    position: absolute;
+    margin-top: -17.5rem;
+  }
 }
 
 .svg-htmp {
+  z-index: 3;
   a:hover {
     opacity: 0.6;
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .htmp {
+    &-bg {
+      height: 20rem;
+      width: 20rem;
+      right: 0rem;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 }
