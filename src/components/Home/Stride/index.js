@@ -9,9 +9,6 @@ import {
   StrideCard3txt,
   StrideReadMore
 } from "../../../constants";
-import Card1 from "../../../images/stride/1.png";
-import Card2 from "../../../images/stride/2.png";
-import Card3 from "../../../images/stride/3.jpg";
 import RightArrow from "../../../images/icons/right-arrow.svg";
 
 const Stride = () => {
@@ -41,13 +38,16 @@ const Stride = () => {
                 <div className="stride-card-dt">
                   <p className="stride-card-dt-head">{StrideCard1head}</p>
                   <p className="stride-card-dt-txt">{StrideCard1txt}</p>
-                </div>
-                <div className="stride-card-dt-rm">
-                  <a>
+                  <a
+                    target="_blank"
+                    href="https://beats.eckovation.com/launch-of-gyanodaya-coffee-table-book/"
+                    className="stride-card-dt-rm"
+                  >
                     {StrideReadMore} <img src={RightArrow} />
                   </a>
                 </div>
               </div>
+              <div className="stride-card-bg"></div>
             </div>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -61,7 +61,11 @@ const Stride = () => {
                 <div className="stride-card-dt">
                   <p className="stride-card-dt-head">{StrideCard2head}</p>
                   <p className="stride-card-dt-txt">{StrideCard2txt}</p>
-                  <a className="stride-card-dt-rm">
+                  <a
+                    target="_blank"
+                    href="https://beats.eckovation.com/enabling-the-rural-youth-to-grasp-the-perch/"
+                    className="stride-card-dt-rm"
+                  >
                     {StrideReadMore} <img src={RightArrow} />
                   </a>
                 </div>
@@ -79,7 +83,11 @@ const Stride = () => {
                 <div className="stride-card-dt">
                   <p className="stride-card-dt-head">{StrideCard3head}</p>
                   <p className="stride-card-dt-txt">{StrideCard3txt}</p>
-                  <a className="stride-card-dt-rm">
+                  <a
+                    target="_blank"
+                    href="https://beats.eckovation.com/gyanodaya-new-hopes-for-kasturba-gandhi-balika-vidyalaya-godda/"
+                    className="stride-card-dt-rm"
+                  >
                     {StrideReadMore} <img src={RightArrow} />
                   </a>
                 </div>
