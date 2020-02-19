@@ -31,7 +31,7 @@ const Coverage = props => {
 
         <a
           xlinkTitle={SvgNames.ar1.name}
-          onClick={() =>
+          onMouseOver={() =>
             props.setHeatMapData(SvgNames.ar1.name, SvgNames.ar1.data)
           }
         >
@@ -43,7 +43,7 @@ const Coverage = props => {
 
         <a
           xlinkTitle={SvgNames.ar2.name}
-          onClick={() =>
+          onMouseOver={() =>
             props.setHeatMapData(SvgNames.ar2.name, SvgNames.ar2.data)
           }
         >
@@ -64,7 +64,7 @@ const Coverage = props => {
 
         <a
           xlinkTitle={SvgNames.ar3.name}
-          onClick={() =>
+          onMouseOver={() =>
             props.setHeatMapData(SvgNames.ar3.name, SvgNames.ar3.data)
           }
         >
@@ -84,7 +84,7 @@ const Coverage = props => {
         ></path>
         <a
           xlinkTitle={SvgNames.ar4.name}
-          onClick={() =>
+          onMouseOver={() =>
             props.setHeatMapData(SvgNames.ar4.name, SvgNames.ar4.data)
           }
         >
@@ -100,7 +100,7 @@ const Coverage = props => {
         ></path>
         <a
           xlinkTitle={SvgNames.ar5.name}
-          onClick={() =>
+          onMouseOver={() =>
             props.setHeatMapData(SvgNames.ar5.name, SvgNames.ar5.data)
           }
         >
@@ -117,7 +117,7 @@ const Coverage = props => {
 
         <a
           xlinkTitle={SvgNames.ar6.name}
-          onClick={() =>
+          onMouseOver={() =>
             props.setHeatMapData(SvgNames.ar6.name, SvgNames.ar6.data)
           }
         >
@@ -133,7 +133,7 @@ const Coverage = props => {
           </mask>
           <a
             xlinkTitle={SvgNames.ar7.name}
-            onClick={() =>
+            onMouseOver={() =>
               props.setHeatMapData(SvgNames.ar7.name, SvgNames.ar7.data)
             }
           >
@@ -150,7 +150,7 @@ const Coverage = props => {
         ></path>
         <a
           xlinkTitle={SvgNames.ar8.name}
-          onClick={() =>
+          onMouseOver={() =>
             props.setHeatMapData(SvgNames.ar8.name, SvgNames.ar8.data)
           }
         >
@@ -162,7 +162,7 @@ const Coverage = props => {
 
         <a
           xlinkTitle={SvgNames.ar9.name}
-          onClick={() =>
+          onMouseOver={() =>
             props.setHeatMapData(SvgNames.ar9.name, SvgNames.ar9.data)
           }
         >

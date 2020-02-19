@@ -3,7 +3,7 @@ import { heatmapDisc } from "../../../constants";
 import Coverage from "./Coverage";
 
 const MainData = {
-  name: "Godda",
+  name: "Godda ( District )",
   data: {
     villages: 201,
     schools: 246,
@@ -16,7 +16,7 @@ class Heatmap extends Component {
   state = MainData;
   setHeatMapData(name, data) {
     this.setState({
-      name: name,
+      name: name + " ( Block )",
       data: data
     });
   }
@@ -36,7 +36,7 @@ class Heatmap extends Component {
               </div>
             </center>
             <div className="col">
-              <div className="htmp-mp">
+              <div className="htmp-mp" onClick={() => this.setState(MainData)}>
                 <div className="row">
                   <div className="col-md-1 col-lg-1 d-none d-md-block"></div>
                   <div className="col-md-5 col-lg-5 col-sm-12 col-xs-12">
@@ -65,9 +65,6 @@ class Heatmap extends Component {
                               <center
                                 style={{ cursor: "pointer" }}
                                 className="htmp-data-ht"
-                                onClick={() => {
-                                  this.setState(MainData);
-                                }}
                               >
                                 {this.state.name}
                               </center>
@@ -148,6 +145,7 @@ class Heatmap extends Component {
                             </div>
                           </div>
                         </div>
+                        <div className="htmp-bg"></div>
                       </div>
                     </center>
                   </div>
