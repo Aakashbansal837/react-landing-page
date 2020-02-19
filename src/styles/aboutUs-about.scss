@@ -13,7 +13,7 @@
   &-main {
     margin-top: 4rem;
     &-data {
-      margin-top: 4rem;
+      margin-top: 3rem;
       @include Header-text-4();
       padding-bottom: 4rem;
     }
@@ -21,8 +21,12 @@
     &-img {
       border-radius: 0.5rem;
       box-shadow: 0 0 0.65rem 0 rgba(33, 42, 57, 0.15);
+      background-image: url(../images/AboutUS/2.jpg);
+      background-size: cover;
+      background-position: center;
       margin-bottom: 10rem;
-      @include max-ht-wd($ht: 26.37rem, $wd: 32.56rem);
+      border-radius: 0.5rem;
+      @include max-ht-wd($ht: 20rem, $wd: 32.56rem);
     }
   }
 
@@ -41,7 +45,10 @@
 
   &-bottom {
     margin-top: 4rem;
-    height: 20rem;
+    background-image: url(../images/AboutUS/3.svg);
+    background-size: cover;
+    background-position: center;
+    height: 22rem;
   }
 }
 
@@ -54,10 +61,20 @@
 
     &-main {
       margin-top: 0rem;
-      &-img {
-        @include max-ht-wd($ht: 24rem, $wd: 32.56rem);
-        margin-bottom: 15rem;
+      &-data {
+        font-size: 1.25rem;
       }
+      &-img {
+        @include max-ht-wd($ht: 20rem, $wd: 32.56rem);
+        margin-bottom: 24rem;
+      }
+    }
+    &-bottom {
+      margin-top: 4rem;
+      background-image: url(../images/AboutUS/3.svg);
+      background-size: cover;
+      background-position: center;
+      height: 8rem;
     }
   }
 }
@@ -70,6 +87,9 @@
     }
     &-main {
       margin-top: 0rem;
+      &-data {
+        font-size: 1.5rem;
+      }
       &-img {
         @include max-ht-wd($ht: 18rem, $wd: 32.56rem);
         margin-bottom: 10rem;
@@ -92,6 +112,5 @@
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 }
