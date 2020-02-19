@@ -18,6 +18,7 @@ const Gallery = () => {
   const [moveData, setMoveData] = React.useState("glry-sliderBTN-right-1");
   const [left, setLeft] = React.useState("");
   const [right, setRight] = React.useState("");
+  const [view, setView] = React.useState(false);
 
   const data = [
     Img1,
@@ -49,6 +50,9 @@ const Gallery = () => {
     Img2,
     Img1
   ];
+
+  const [pop, setPop] = React.useState(data);
+  const [select, setSelect] = React.useState(0);
 
   const changeActive = pos => {
     // moving right (end point)
@@ -126,6 +130,58 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
+      <div
+        className="gallery-popup "
+        style={{ display: view ? "block" : "none" }}
+      >
+        <div className="gallery-popup-modal d-none d-lg-block">
+          <span class="gallery-popup-close" onClick={() => setView(false)}>
+            &times;
+          </span>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner gallery-popup-modal-inner">
+              <div class="carousel-item gallery-popup-modal-img active">
+                <img src={pop[select]} alt="..." />
+              </div>
+              {pop.map(dt => {
+                return (
+                  <div class=" carousel-item gallery-popup-modal-img">
+                    <img src={dt} alt="..." />
+                  </div>
+                );
+              })}
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
       <center className="gallery-header">Gallery</center>
       <div className="container">
         <div className="gallery-main">
@@ -148,21 +204,43 @@ const Gallery = () => {
                       <div className="row">
                         <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                           <div className={moveData + " " + right}>
-                            <div className="gallery-data-slide">
+                            <div
+                              className="gallery-data-slide"
+                              onClick={() => {
+                                setPop(data);
+                                setSelect(active);
+                                setView(true);
+                              }}
+                            >
                               <img src={data[active]} />
                             </div>
                           </div>
                         </div>
                         <div className="d-none d-lg-block col-md-6 col-lg-4">
                           <div className={moveData}>
-                            <div className="gallery-data-slide">
+                            <div
+                              className="gallery-data-slide"
+                              onClick={() => {
+                                setPop(data);
+                                setSelect(active + 1);
+
+                                setView(true);
+                              }}
+                            >
                               <img src={data[active + 1]} />
                             </div>
                           </div>
                         </div>
                         <div className="d-none d-sm-block col-sm-6 col-md-6 col-lg-4">
                           <div className={moveData + " " + left}>
-                            <div className="gallery-data-slide">
+                            <div
+                              className="gallery-data-slide"
+                              onClick={() => {
+                                setPop(data);
+                                setSelect(active + 2);
+                                setView(true);
+                              }}
+                            >
                               <img src={data[active + 2]} />
                             </div>
                           </div>
@@ -172,21 +250,42 @@ const Gallery = () => {
                       <div className="row">
                         <div className="d-none d-sm-block col-sm-6 col-md-6 col-lg-4">
                           <div className={moveData + " " + right}>
-                            <div className="gallery-data-slide">
+                            <div
+                              className="gallery-data-slide"
+                              onClick={() => {
+                                setPop(data2);
+                                setSelect(active);
+                                setView(true);
+                              }}
+                            >
                               <img src={data2[active]} />
                             </div>
                           </div>
                         </div>
                         <div className="d-none d-lg-block col-md-6 col-lg-4">
                           <div className={moveData}>
-                            <div className="gallery-data-slide">
+                            <div
+                              className="gallery-data-slide"
+                              onClick={() => {
+                                setPop(data2);
+                                setSelect(active + 1);
+                                setView(true);
+                              }}
+                            >
                               <img src={data2[active + 1]} />
                             </div>
                           </div>
                         </div>
                         <div className="d-none d-sm-block col-sm-6  col-md-6 col-lg-4">
                           <div className={moveData + " " + left}>
-                            <div className="gallery-data-slide">
+                            <div
+                              className="gallery-data-slide"
+                              onClick={() => {
+                                setPop(data2);
+                                setSelect(active + 2);
+                                setView(true);
+                              }}
+                            >
                               <img src={data2[active + 2]} />
                             </div>
                           </div>
