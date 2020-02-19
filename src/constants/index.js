@@ -1,15 +1,15 @@
 export const aboutDivTexthead = `Mera Mobile, Mera Vidyalaya`;
 export const aboutDivTextDis = `Gyanodaya Godda, an education initiative has been successfully instituted by Godda District Administration, Adani Foundation and Eckovation. The learning process used in the Model involves audio-visual classrooms having animated and contextualized lectures followed by daily assessments. The first interaction with the students happens in the classroom, where they watch the video screencast on the television. The videos are kept super interactive which ensures a good level attentiveness from the students`;
 
-export const heatmapDisc = `The program started with just 50 schools in the district has not expanded its reach to more than 230 schools and about 800 classes. The program is being run in all the classes from VI to XII including free coaching for several competitive examinations such as JEE and NEET. `;
+export const heatmapDisc = `The program started with just 50 schools in the district has expanded its reach to more than 230 schools and about 800 classes. The program is being run in all the classes from VI to XII including free coaching for several competitive examinations such as JEE and NEET. `;
 
 export const StrideInfo = `Check this space to learn about the impact Gyanodaya is making on the ground. It includes experiences, success stories, and highlights of the program in the words of our teachers, students, and parents.`;
-export const StrideCard1head = `Ravindra Nath, Principal`;
-export const StrideCard1txt = `Schools were short  of teachers and students were dependent on tuition Schools were short  of teachers and students were dependent on tuition Schools were short  of teachers and students were dependent on tuition Schools were short  of teachers and students were dependent on tuition Schools were short  of teachers and students were dependent on tuition teachers before Gyanodaya was introduced in the schools of Godda district. 90% of the students in my school are under privileged and haven’t ever se…`;
-export const StrideCard2head = `Shreemant Rakshit, Student`;
-export const StrideCard2txt = `Shreemant Rakshit, a resident of Deodanr Village,  has been working in a cloth retail shop after his school hours since Class 6. However, this has not prevented Shreemant Rakshit from working hard in his academics over the years…`;
-export const StrideCard3head = `Kasturba Gandhi Balika Vidyalaya (KGBV), Sunderapa…`;
-export const StrideCard3txt = `KGBV Sunderpahari is situated in a Naxal-affected area of Godda and 80% of the girls belong to the disadvantaged groups. It was surprising and encouraging to see the excitement of these students…`;
+export const StrideCard1head = `Launch of Gyanodaya Coffee Table Book`;
+export const StrideCard2head = `Enabling The Rural Youth To Grasp The Perch`;
+export const StrideCard3head = `Gyanodaya: New Hopes for Kasturba Gandhi Balika Vidyalaya, Godda`;
+export const StrideCard1txt = `Showcasing Project Gyanodaya, the coffee table book titled “Gyanodaya Godda” was released on the occasion of Children’s Day in presence of Dr Priti G. Adani, Chairperson, Adani Foundation. Senior officials from Adani Group were also   ...`;
+export const StrideCard2txt = `According to India Today States of the State Survey 2018, Jharkhand ranks 20 out of 21 states in terms of education. This is quite a fall from 2017’s ranking of 17. India has the largest youth population in the world belonging to the age ...`;
+export const StrideCard3txt = `According to the Census of 2011, India’s female literacy rate is just 65% lower than the world average of 80% but there has been a significant improvement since 1971 when it was mere 18%. Although in Jharkhand this number is still low ...`;
 export const StrideReadMore = "Read full story";
 
 export const ReportsText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
