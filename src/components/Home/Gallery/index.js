@@ -130,55 +130,56 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
-      <div
-        className="gallery-popup "
-        style={{ display: view ? "block" : "none" }}
-      >
-        <div className="gallery-popup-modal d-none d-lg-block">
-          <span class="gallery-popup-close" onClick={() => setView(false)}>
-            &times;
-          </span>
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <div class="carousel-inner gallery-popup-modal-inner">
-              <div class="carousel-item gallery-popup-modal-img active">
-                <img src={pop[select]} alt="..." />
+      <div className="d-none d-lg-block">
+        <div
+          className="gallery-popup "
+          style={{ display: view ? "block" : "none" }}
+        >
+          <div className="gallery-popup-modal ">
+            <span
+              className="gallery-popup-close"
+              onClick={() => setView(false)}
+            >
+              &times;
+            </span>
+            <div id="carouselExampleControls" className="carousel slide">
+              <div className="carousel-inner gallery-popup-modal-inner">
+                <div className="carousel-item gallery-popup-modal-img active">
+                  <img src={pop[select]} alt="..." />
+                </div>
+                {pop.map(dt => {
+                  return (
+                    <div className=" carousel-item gallery-popup-modal-img">
+                      <img src={dt} alt="..." />
+                    </div>
+                  );
+                })}
               </div>
-              {pop.map(dt => {
-                return (
-                  <div class=" carousel-item gallery-popup-modal-img">
-                    <img src={dt} alt="..." />
-                  </div>
-                );
-              })}
+              <a
+                className="carousel-control-prev"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="sr-only">Previous</span>
+              </a>
+              <a
+                className="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="sr-only">Next</span>
+              </a>
             </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
       </div>
@@ -212,7 +213,7 @@ const Gallery = () => {
                                 setView(true);
                               }}
                             >
-                              <img src={data[active]} />
+                              <img alt="image" src={data[active]} />
                             </div>
                           </div>
                         </div>
@@ -223,11 +224,10 @@ const Gallery = () => {
                               onClick={() => {
                                 setPop(data);
                                 setSelect(active + 1);
-
                                 setView(true);
                               }}
                             >
-                              <img src={data[active + 1]} />
+                              <img alt="image" src={data[active + 1]} />
                             </div>
                           </div>
                         </div>
@@ -241,7 +241,7 @@ const Gallery = () => {
                                 setView(true);
                               }}
                             >
-                              <img src={data[active + 2]} />
+                              <img alt="image" src={data[active + 2]} />
                             </div>
                           </div>
                         </div>
@@ -258,7 +258,7 @@ const Gallery = () => {
                                 setView(true);
                               }}
                             >
-                              <img src={data2[active]} />
+                              <img alt="image" src={data2[active]} />
                             </div>
                           </div>
                         </div>
@@ -272,7 +272,7 @@ const Gallery = () => {
                                 setView(true);
                               }}
                             >
-                              <img src={data2[active + 1]} />
+                              <img alt="image" src={data2[active + 1]} />
                             </div>
                           </div>
                         </div>
@@ -286,7 +286,7 @@ const Gallery = () => {
                                 setView(true);
                               }}
                             >
-                              <img src={data2[active + 2]} />
+                              <img alt="image" src={data2[active + 2]} />
                             </div>
                           </div>
                         </div>
