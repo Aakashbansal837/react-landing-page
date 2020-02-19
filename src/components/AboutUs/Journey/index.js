@@ -9,7 +9,11 @@ const Journey = () => {
         <div className="journey-data">
           <div className="row">
             <div className="col-12">
-              <img className="d-block w-100" src={Img} alt="journey image" />
+              <img
+                className=" journey-data-img d-block w-100"
+                src={Img}
+                alt="journey image"
+              />
             </div>
           </div>
         </div>

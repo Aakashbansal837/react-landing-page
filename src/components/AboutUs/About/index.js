@@ -17,7 +17,7 @@ const About = () => {
             <div className="col-sm-12 col-xs-12 col-md-6 col-lg-6">
               <div className="abus-main-data">{AboutUsAboutText}</div>
               <div className="abus-main-img">
-                <img className="d-block w-100 h-100" src={LeftImg} />
+                {/* <img className="d-block w-100 h-100" src={LeftImg} /> */}
               </div>
             </div>
             <div className="col-sm-12 col-xs-12 col-md-6 col-lg-6">
@@ -26,11 +26,7 @@ const About = () => {
             </div>
             <div className="col-12">
               <div className="abus-bottom">
-                <img
-                  className="d-block w-100 h-100"
-                  src={BottomImg}
-                  alt="about img"
-                />
+                {/* <img src={BottomImg} alt="about img" /> */}
               </div>
             </div>
           </div>
