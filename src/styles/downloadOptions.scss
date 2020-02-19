@@ -19,11 +19,12 @@
     }
 
     &-download {
+      background: transparent;
       margin: 1.5rem 0rem;
-      height: 2.6rem;
-      border-radius: 0.4rem;
+      height: 2.5rem;
+      border-radius: 0.3rem;
       box-shadow: 0 2px 6px 0 rgba(33, 42, 57, 0.25);
-      width: 9rem;
+      width: 8.9rem;
       cursor: pointer;
     }
   }
