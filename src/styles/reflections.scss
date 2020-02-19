@@ -55,29 +55,27 @@
 
       &-move-left {
         &-1 {
-          animation: slide-left-1 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-left-1 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         }
         &-2 {
-          animation: slide-left-2 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-left-2 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         }
       }
       &-move-right {
         &-1 {
-          animation: slide-right-1 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-            both;
+          animation: slide-right-1 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         }
         &-2 {
-          animation: slide-right-2 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-            both;
+          animation: slide-right-2 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         }
       }
 
       &-focus {
         &-1 {
-          animation: focus-in-expand-1 0.7s ease-in both;
+          animation: focus-in-expand-1 1s ease-in both;
         }
         &-2 {
-          animation: focus-in-expand-2 0.7s ease-in both;
+          animation: focus-in-expand-2 1s ease-in both;
         }
       }
 
