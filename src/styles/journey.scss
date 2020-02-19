@@ -1,7 +1,8 @@
 .journey {
-  margin-top: 10rem;
+  margin-top: 2rem;
   &-header {
     @include header-main();
+    margin-top: 4rem;
   }
 
   &-data {
